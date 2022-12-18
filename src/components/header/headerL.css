@@ -1,0 +1,24 @@
+
+.headerL {
+    height: 8vh;
+    width: 20vw;
+    margin-left: 1vw;
+    padding-left: 6vw;
+    padding-top: 2vh;
+    align-items: center;
+    /* background-color: blanchedalmond; */
+}
+
+.header__socials {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header__socials a {
+    font-size: 3rem;
+    color: black;
+}
+
