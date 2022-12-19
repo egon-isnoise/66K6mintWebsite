@@ -11,29 +11,28 @@ function sketch(p5) {
   let scale = 30;
   let res = 0.016;
   let nPoints = 350;
-  let radius = 460;
   let nRings = 40;
   let move = 0.000035;
-  let light1, light2, light3;
-
-  let w = p5.windowWidth * 0.55;
+  let light1;
+  let w = p5.windowWidth * 0.5;
   let h = p5.windowHeight;
+  let radius;
 
   p5.setup = () => {
     p5.createCanvas(w, h);
-    p5.colorMode(p5.HSL)
+    p5.colorMode(p5.HSL);
+    radius = w * 0.45
+    // console.log(w)
   }
 
   p5.draw = () => {
     p5.background(67, 22, 92);
     p5.noFill();
     var H1 = p5.map(res, 0, 0.03, 170, 250);
-    var H2 = p5.map(res, 0, 0.03, 120, 180);
-    var H3 = p5.map(res, 0, 0.03, 240, 285);
-    var S = p5.map(res, 0, 0.03, 50, 70);
-    var L = p5.map(res, 0, 0.03, 10, 60);
-
-    // p5.stroke(H,S,L);
+    var H2 = p5.map(res, 0, 0.03, 130, 190);
+    var H3 = p5.map(res, 0, 0.03, 230, 275);
+    var S = p5.map(res, 0, 0.03, 30, 60);
+    var L = p5.map(res, 0, 0.03, 10, 50);
     
     for(let r = 0; r < radius; r += radius/nRings){
       p5.beginShape();
@@ -42,7 +41,6 @@ function sketch(p5) {
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             var x = w/2 + r *p5.cos(a);
             var y = h/2 + r *p5.sin(a);
-
             var n = p5.map(p5.noise(x *res, y *res), 0, 1, -scale, scale);
             light1 = n *2;
             p5.curveVertex(x +n, y +n);
@@ -65,7 +63,6 @@ function sketch(p5) {
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             x = w/2 + r *p5.cos(a);
             y = h/2 + r *p5.sin(a);
-
             n = p5.map(p5.noise(x *res, y *res), 0, 1, -scale+15, scale-15);
             p5.curveVertex(x +n, y +n);
         }
@@ -77,7 +74,6 @@ function sketch(p5) {
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             x = w/2 + r *p5.cos(a);
             y = h/2 + r *p5.sin(a);
-
             n = p5.map(p5.noise(x *res, y *res), 0, 1, -scale+20, scale-20);
             p5.curveVertex(x +n, y +n);
         }
@@ -86,8 +82,7 @@ function sketch(p5) {
 
     if(res <= -0.02 || res >= 0.022){move *=-1};
     res += move;
-    console.log(res);
-
+    // console.log(res);
   };
 
   p5.mouseMoved = function() {

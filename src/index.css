@@ -30,15 +30,18 @@ body {
 .sideLeft {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   align-items: center;
+  height: 100vh;
+  width: 25vw;
 }
 
 .center {
-  flex-grow: 3;
+  height: 100vh;
+  width: 50vw;
 }
 
 .sideRight {
-  flex-grow: 1;
   align-items: center;
+  height: 100vh;
+  width: 25vw;
 }

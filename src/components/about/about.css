@@ -4,17 +4,17 @@
     /* align-items: flex-start; */
     justify-content: space-around;
     text-align: center;
-    gap: 2rem;
+    gap: 2vh;
     height: 45vh;
     width: 20vw;
     margin-left: 1vw;
-    padding: 1rem;
+    padding: 1vw;
     padding-top: 6vh;
     /* background-color: blueviolet; */
 }
 
 .description_container >* {
-    gap: 1rem;
+    gap: 1vh;
     font-size: 1rem;
     color: black;
 }
