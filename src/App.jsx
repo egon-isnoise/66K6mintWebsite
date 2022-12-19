@@ -36,7 +36,7 @@ function sketch(p5) {
     
     for(let r = 0; r < radius; r += radius/nRings){
       p5.beginShape();
-      p5.stroke(H1,S,40);
+      p5.stroke(H1,60,40);
       p5.strokeWeight(2);
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             var x = w/2 + r *p5.cos(a);
@@ -69,8 +69,8 @@ function sketch(p5) {
       p5.endShape(p5.CLOSE);
 
       p5.beginShape();
-      p5.stroke(H1,S,L);
-      p5.strokeWeight(1);
+      p5.stroke(H1,70,100);
+      p5.strokeWeight(0.5);
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             x = w/2 + r *p5.cos(a);
             y = h/2 + r *p5.sin(a);
