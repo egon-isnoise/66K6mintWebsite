@@ -14,10 +14,10 @@ const Team = () => {
                         <h1> Development </h1>
                         <p>egonsisnoise.eth/.tez</p>
                         <div className="links_socials">
-                            <a href="#home" target="_blank" rel="noreferrer">
+                            <a href="https://www.instagram.com/egonisnoise.eth" target="_blank" rel="noreferrer">
                                 <FaInstagramSquare/>
                             </a>
-                            <a href="#home" target="_blank" rel="noreferrer">
+                            <a href="https://twitter.com/egonisnoise" target="_blank" rel="noreferrer">
                                 <FaTwitterSquare/>
                             </a>
                         </div>
@@ -30,10 +30,10 @@ const Team = () => {
                         <h1> Design </h1>
                         <p>Xefler</p>
                         <div className="links_socials">
-                            <a href="#home" target="_blank" rel="noreferrer">
+                            <a href="https://www.instagram.com/xefler_/?theme=dark" target="_blank" rel="noreferrer">
                                 <FaInstagramSquare/>
                             </a>
-                            <a href="#home" target="_blank" rel="noreferrer">
+                            <a href="https://twitter.com/Xefler2022" target="_blank" rel="noreferrer">
                                 <FaTwitterSquare/>
                             </a>
                         </div>

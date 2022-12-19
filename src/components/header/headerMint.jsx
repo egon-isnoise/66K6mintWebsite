@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Switch from '@mui/material/Switch';
 import './headerR.css';
 
 
@@ -28,7 +30,7 @@ const HeaderRight = ({ accounts, setAccounts }) => {
 
     const accountChangedHandler = (newAccount) =>{
         var addressString= newAccount.toString();
-        setConnButtonText(addressString.slice(0, 7) + '...' + addressString.slice(-4));
+        setConnButtonText(addressString.slice(0, 10) + '...' + addressString.slice(-4));
         if(newAccount === 0 ){
             setConnButtonText('Connect Wallet')
         }
@@ -56,6 +58,10 @@ const HeaderRight = ({ accounts, setAccounts }) => {
                         onClick={connectWalletHandler}
                     >{connButtonText}
                     </button>
+                </div>
+                <div className='header__nightMode'>
+                    <Switch color="default" sx={{ fontSize: 50 }}/>
+                    <Brightness4Icon sx={{ fontSize: 50 }}/>
                 </div>
             </div>
         </section>
