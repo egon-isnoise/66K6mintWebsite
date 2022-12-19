@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {FaEthereum, FaLeaf} from 'react-icons/fa'
 import { ethers, BigNumber } from 'ethers';
 import './mint.css';
 import GIF from '../../assets/9output.gif';
@@ -51,6 +52,9 @@ const Mint = ({ accounts }) => {
                     {isConnected ? (
                         <>
                         <div className="more_less">
+                            <div className="more_icon">
+                               <FaEthereum/>
+                            </div>
                             <button
                                 onClick={handleDecrement}
                             >-</button>
@@ -58,17 +62,24 @@ const Mint = ({ accounts }) => {
                             <button
                                 onClick={handleIncrement}
                             >+</button>
+                            <div className="more_icon">
+                              <FaEthereum/>
+                            </div>
                         </div>
-                        <div>
-                            <button
-                                className="minting_button"
-                                onClick={handleMint}
-                            >Mint Now</button>
-                        </div>
+                            <div>
+                                <button
+                                    className="minting_button"
+                                    onClick={handleMint}
+                                >Mint Now</button>
+                            </div>
                         </>  
                     ):(
                         <>
                         <h1>Connect MetaMask to Mint</h1>
+                        <div className="mint_icons">
+                           <FaEthereum/>
+                           <FaLeaf/>
+                        </div>
                         </>
                     )}
                     

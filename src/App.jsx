@@ -9,7 +9,7 @@ import { ReactP5Wrapper } from "react-p5-wrapper";
 
 function sketch(p5) {
   let scale = 30;
-  let res = 0.011;
+  let res = 0.016;
   let nPoints = 350;
   let radius = 460;
   let nRings = 40;
@@ -27,7 +27,6 @@ function sketch(p5) {
   p5.draw = () => {
     p5.background(67, 22, 92);
     p5.noFill();
-    let ska = 0;
     
     for(let r = 0; r < radius; r += radius/nRings){
       p5.beginShape();
@@ -43,7 +42,7 @@ function sketch(p5) {
         }
       p5.endShape(p5.CLOSE);
       p5.beginShape();
-      p5.stroke(8, 71 +light2, 64);
+      p5.stroke(8, 71 +light2, 54);
       p5.strokeWeight(1);
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             x = w/2 + r *p5.cos(a);
