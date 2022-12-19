@@ -12,7 +12,7 @@ const Team = () => {
                     <img src={IMAGE1} alt="egonisnoise"/>
                     <div className="description_socials">
                         <h1> Development </h1>
-                        <p>Musician, multimedia artist & Web3 Developer</p>
+                        <p>egonsisnoise.eth/.tez</p>
                         <div className="links_socials">
                             <a href="#home" target="_blank" rel="noreferrer">
                                 <FaInstagramSquare/>
@@ -28,7 +28,7 @@ const Team = () => {
                     <img src={IMAGE2} alt="Xefler"/>
                     <div className="description_socials">
                         <h1> Design </h1>
-                        <p>Photographer, wood artist</p>
+                        <p>Xefler</p>
                         <div className="links_socials">
                             <a href="#home" target="_blank" rel="noreferrer">
                                 <FaInstagramSquare/>

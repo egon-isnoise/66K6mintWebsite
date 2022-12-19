@@ -1,6 +1,7 @@
 import React from 'react';
 import './headerL.css';
 import {FaInstagramSquare, FaTwitterSquare, FaDiscord} from 'react-icons/fa'
+import LOGO from '../../assets/noiseLogo.svg'
 
 
 const HeaderLeft = () => {
@@ -8,6 +9,9 @@ const HeaderLeft = () => {
         <section>
             <div className='headerL'>
                 <div className="container header__socials">
+                <a href="#home" target="_blank" rel="noreferrer">
+                    <img src={LOGO} alt="egonisnoise"/>
+                    </a>
                     <a href="#home" target="_blank" rel="noreferrer">
                         <FaInstagramSquare/>
                     </a>

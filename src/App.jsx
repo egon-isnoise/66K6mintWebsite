@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import HeaderRight from './components/header/headerR';
-import HeaderLeft from './components/header/headerL';
+import HeaderRight from './components/header/headerMint';
+import HeaderLeft from './components/header/headerSocial';
 import Mint from './components/mint/mint';
 import About from './components/about/about';
 import Team from './components/team/team';
@@ -43,7 +43,7 @@ function sketch(p5) {
       p5.endShape(p5.CLOSE);
     }
 
-    if(res <= 0.01 || res >= 0.02){move *=-1};
+    if(res <= 0 || res >= 0.03){move *=-1};
     res += move;
     console.log(res);
 
