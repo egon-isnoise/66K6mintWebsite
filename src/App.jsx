@@ -80,13 +80,13 @@ function sketch(p5) {
       p5.endShape(p5.CLOSE);
     }
 
-    if(res <= -0.02 || res >= 0.022){move *=-1};
+    if(res <= 0.004 || res >= 0.022){move *=-1};
     res += move;
-    // console.log(res);
+    // console.log(p5.mouseX);
   };
 
   p5.mouseMoved = function() {
-    res = p5.map(p5.mouseX, 0.011, p5.windowWidth, 0, 0.022);
+    res = p5.map(p5.mouseX, -400, p5.windowWidth, 0.005, 0.022);
   };
 
   p5.windowResized = function() {
