@@ -27,10 +27,17 @@ function sketch(p5) {
   p5.draw = () => {
     p5.background(67, 22, 92);
     p5.noFill();
+    var H1 = p5.map(res, 0, 0.03, 170, 250);
+    var H2 = p5.map(res, 0, 0.03, 120, 180);
+    var H3 = p5.map(res, 0, 0.03, 250, 300);
+    var S = p5.map(res, 0, 0.03, 50, 90);
+    var L = p5.map(res, 0, 0.03, 10, 80);
+
+    // p5.stroke(H,S,L);
     
     for(let r = 0; r < radius; r += radius/nRings){
       p5.beginShape();
-      p5.stroke(8, 71 -light1, 10);
+      p5.stroke(H1,S,40);
       p5.strokeWeight(2);
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             var x = w/2 + r *p5.cos(a);
@@ -42,27 +49,36 @@ function sketch(p5) {
         }
       p5.endShape(p5.CLOSE);
       p5.beginShape();
-      p5.stroke(8, 71 +light2, 54);
-      p5.strokeWeight(1);
+      p5.stroke(H2 +light1,S,L);
+      p5.strokeWeight(1.5);
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             x = w/2 + r *p5.cos(a);
             y = h/2 + r *p5.sin(a);
-
             n = p5.map(p5.noise(x *res, y *res), 0, 1, -scale+5, scale-5);
-            light2 = n *3.5;
             p5.curveVertex(x +n, y +n);
         }
       p5.endShape(p5.CLOSE);
 
       p5.beginShape();
-      p5.stroke(58, 71 +light3, 74);
-      p5.strokeWeight(0.5);
+      p5.stroke(H3 +light1,S,L);
+      p5.strokeWeight(1);
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             x = w/2 + r *p5.cos(a);
             y = h/2 + r *p5.sin(a);
 
             n = p5.map(p5.noise(x *res, y *res), 0, 1, -scale+10, scale-10);
-            light3 = n *5;
+            p5.curveVertex(x +n, y +n);
+        }
+      p5.endShape(p5.CLOSE);
+
+      p5.beginShape();
+      p5.stroke(H1,S,L);
+      p5.strokeWeight(1);
+        for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
+            x = w/2 + r *p5.cos(a);
+            y = h/2 + r *p5.sin(a);
+
+            n = p5.map(p5.noise(x *res, y *res), 0, 1, -scale+20, scale-20);
             p5.curveVertex(x +n, y +n);
         }
       p5.endShape(p5.CLOSE);

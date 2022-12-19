@@ -12,7 +12,7 @@ const About = () => {
                         superficial differences.
                     </p>
                     <br />
-                    <p>At the end we all are the same, needing of comprehension and love to thrive,
+                    <p>Deep down we all are the same, wanting comprehension and love to thrive,
                         hiding ourselves behind a thick, fuzzy, skin.
                     </p>
                 </div>
