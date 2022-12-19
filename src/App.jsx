@@ -29,9 +29,9 @@ function sketch(p5) {
     p5.noFill();
     var H1 = p5.map(res, 0, 0.03, 170, 250);
     var H2 = p5.map(res, 0, 0.03, 120, 180);
-    var H3 = p5.map(res, 0, 0.03, 250, 300);
-    var S = p5.map(res, 0, 0.03, 50, 90);
-    var L = p5.map(res, 0, 0.03, 10, 80);
+    var H3 = p5.map(res, 0, 0.03, 240, 285);
+    var S = p5.map(res, 0, 0.03, 50, 80);
+    var L = p5.map(res, 0, 0.03, 10, 70);
 
     // p5.stroke(H,S,L);
     
