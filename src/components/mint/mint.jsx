@@ -51,7 +51,9 @@ const Mint = ({ accounts }) => {
                 <div className="full_minting">
                     {isConnected ? (
                         <>
-                        <p>Every NFT costs</p>
+                        <p>0.1 ETH x NFT</p>
+                        <p>max 10 mints x wallet</p>
+                        <br />
                         <div className="more_less">
                             <div className="more_icon">
                                <FaEthereum/>
