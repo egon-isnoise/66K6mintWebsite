@@ -68,18 +68,19 @@ const Mint = ({ accounts }) => {
                             <div className="more_icon">
                             <a href="#home" target="_blank" rel="noreferrer">
                                 <IoIosPaper/>
-
                             </a>
                             </div>
-                            <button
+                            <button className='increments'
                                 onClick={handleDecrement}
                             >-</button>
                             <div className="mint_number"> {mintAmount} </div>
-                            <button
+                            <button className='increments'
                                 onClick={handleIncrement}
                             >+</button>
                             <div className="more_icon">
-                              <FaEthereum/>
+                            <a href="#home" target="_blank" rel="noreferrer">
+                                <FaEthereum/>
+                            </a>
                             </div>
                         </div>
                             <div>
