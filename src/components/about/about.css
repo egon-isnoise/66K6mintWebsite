@@ -14,7 +14,11 @@
 }
 
 .description_container >* {
-    gap: 1vh;
     font-size: 1.6vh;
     color: var(--text-color);
+}
+
+.roadmap > a {
+    font-size: 3vh;
+    padding: 1vh;
 }

@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import {FaEthereum, FaLeaf} from 'react-icons/fa'
+import {FaEthereum, FaLeaf} from 'react-icons/fa';
+import {IoIosPaper} from 'react-icons/io';
 import { ethers } from 'ethers';
 import toast, { Toaster } from 'react-hot-toast';
 import './mint.css';
-import GIF from '../../assets/9output.gif';
+import GIF from '../../assets/9output9.gif';
 import SixSixkSixNFTABI from '../../6Sick6NFT.json';
 
 const SixSixkSixNFTaddress = "0xA0253d08AC1736b9445BD4A2e75B876fEcF89aee";
@@ -65,7 +66,10 @@ const Mint = ({ accounts }) => {
                         <br />
                         <div className="more_less">
                             <div className="more_icon">
-                               <FaEthereum/>
+                            <a href="#home" target="_blank" rel="noreferrer">
+                                <IoIosPaper/>
+
+                            </a>
                             </div>
                             <button
                                 onClick={handleDecrement}
@@ -82,7 +86,7 @@ const Mint = ({ accounts }) => {
                                 <button
                                     className="minting_button"
                                     onClick={handleMint}
-                                >Mint Now</button>
+                                >Mint</button>
                             </div>
                         </>  
                     ):(

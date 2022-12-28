@@ -1,4 +1,6 @@
 import React from "react";
+import {FaMap} from 'react-icons/fa'
+import {IoIosPaper} from 'react-icons/io';
 import './about.css';
 
 const About = () => {
@@ -7,18 +9,25 @@ const About = () => {
             <div className="description_container">
                 <div className="why">
                     <h1>Why 66K6?</h1>
-                    <p>These little rascals are born to show the futility of demonizing each other,
+                    <br />
+                    <p>We are born to show the futility of demonizing each other,
                         be it for reason of ideologies, beliefs, race, sexuality or other 
                         superficial differences.
                     </p>
                     <br />
-                    <p>Deep down we all are the same, wanting comprehension and love to thrive,
-                        hiding ourselves behind a thick, fuzzy, skin.
+                    <p>Deep down we all are the same,
+                        hiding behind a thick, fuzzy, skin.
                     </p>
                 </div>
                 <div className="roadmap">
-                    <h1>Our Roadmap</h1>
-                    <p>It' very simple.</p>
+                    <h1>Roadmap & Whitepaper</h1> 
+                    <br />
+                         <a href="#home" target="_blank" rel="noreferrer">
+                         <FaMap/>
+                        </a>
+                        <a href="#home" target="_blank" rel="noreferrer">
+                         <IoIosPaper/>
+                        </a>
                     <p>Every NFT doubles as a vote in the SickDao.</p>
                     <p>You choose collectively which projects to support from the treasury.
                     </p>
