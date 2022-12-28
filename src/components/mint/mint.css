@@ -28,6 +28,8 @@
     justify-content: center;
     height: 30vh;
     padding-bottom: 2vh;
+    background-image: url("../../assets/llline.svg");
+    background-repeat: no-repeat;
     /* background-color: aqua; */
 }
 

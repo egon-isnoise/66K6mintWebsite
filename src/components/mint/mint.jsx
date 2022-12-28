@@ -61,9 +61,6 @@ const Mint = ({ accounts }) => {
                 <div className="full_minting">
                     {isConnected ? (
                         <>
-                        <p>0.1 ETH x NFT</p>
-                        <p>max 10 mints x wallet</p>
-                        <br />
                         <div className="more_less">
                             <div className="more_icon">
                             <a href="#home" target="_blank" rel="noreferrer">
@@ -89,6 +86,10 @@ const Mint = ({ accounts }) => {
                                     onClick={handleMint}
                                 >Mint</button>
                             </div>
+                            <br />
+                            <br />
+                            <p>0.1 ETH x NFT</p>
+                            <p>max 10 mints x wallet</p>
                         </>  
                     ):(
                         <>
