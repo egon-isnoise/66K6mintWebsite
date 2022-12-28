@@ -17,7 +17,7 @@
 
 .sick_gif img {
     width: 100%;
-    border: 5px solid  black;
+    border: 5px solid var(--text-color);
     border-radius: 10px;
 }
 
@@ -43,8 +43,9 @@
     font-size: 2vh;
     padding: .8vw;
     /* margin-top: 1.5rem; */
-    border: 3px solid  black;
-    background-color: rgb(238, 239, 230);
+    border: 3px solid var(--text-color);
+    color: var(--text-color);
+    background-color: var(--general-background);
     border-radius: 10px;
 }
 
@@ -64,8 +65,9 @@
     width: 3vw;
     font-size: 3vh;
     padding: .5vw;
-    border: 3px solid  black;
-    background-color: rgb(238, 239, 230);
+    border: 3px solid var(--text-color);
+    color: var(--text-color);
+    background-color: var(--general-background);
     border-radius: 10px;
 }
 

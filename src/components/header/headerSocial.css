@@ -3,8 +3,8 @@
     height: 8vh;
     width: 20vw;
     margin-left: 1vw;
-    padding-left: 3vw;
-    padding-top: 2vh;
+    padding-left: 1vw;
+    padding-top: 2.5vh;
     align-items: center;
     /* background-color: blanchedalmond; */
 }
@@ -19,11 +19,11 @@
 
 .header__socials a {
     font-size: 3vw;
-    color: black;
+    color: var(--text-color);
 }
 
-.header__socials img {
-    height: 4.5vw;
-    color: black;
+svg {
+    fill: var(--text-color);
 }
+
 

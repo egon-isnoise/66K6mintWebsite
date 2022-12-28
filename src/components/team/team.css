@@ -19,7 +19,7 @@
 
 .member_container img {
     height: 100%;
-    border: 5px solid black;
+    border: 5px solid var(--text-color);
     border-radius: 100px;
 }
 
@@ -42,5 +42,5 @@
 
 .links_socials a {
     font-size: 4vh;
-    color: black;
+    color: var(--text-color);
 }

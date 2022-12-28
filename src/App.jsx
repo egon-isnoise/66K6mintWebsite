@@ -1,11 +1,15 @@
 import React from 'react';
-import { useState } from 'react';
-import HeaderRight from './components/header/headerMint';
-import HeaderLeft from './components/header/headerSocial';
+import { useState, createContext } from 'react';
+import DarkMode from './components/header/darkMode';
+import WalletConnect from './components/header/walletConnect';
+import HeaderSocial from './components/header/headerSocial';
 import Mint from './components/mint/mint';
 import About from './components/about/about';
 import Team from './components/team/team';
-import { ReactP5Wrapper } from "react-p5-wrapper";
+import { ReactP5Wrapper} from "react-p5-wrapper";
+
+export const ThemeContext = createContext(null);
+
 
 function sketch(p5) {
   let scale = 30;
@@ -21,12 +25,12 @@ function sketch(p5) {
   p5.setup = () => {
     p5.createCanvas(w, h);
     p5.colorMode(p5.HSL);
-    radius = w * 0.45
-    // console.log(w)
+    radius = w * 0.45;
   }
 
   p5.draw = () => {
-    p5.background(67, 22, 92);
+    p5.clear();
+
     p5.noFill();
     var H1 = p5.map(res, 0, 0.03, 170, 250);
     var H2 = p5.map(res, 0, 0.03, 130, 190);
@@ -46,6 +50,18 @@ function sketch(p5) {
             p5.curveVertex(x +n, y +n);
         }
       p5.endShape(p5.CLOSE);
+
+      p5.beginShape();
+      p5.stroke(67, 22, 92-light1);
+      p5.strokeWeight(1.5);
+        for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
+            x = w/2 + r *p5.cos(a);
+            y = h/2 + r *p5.sin(a);
+            n = p5.map(p5.noise(x *res, y *res), 0, 1, -scale+2.5, scale-2.5);
+            p5.curveVertex(x +n, y +n);
+        }
+      p5.endShape(p5.CLOSE);
+      
       p5.beginShape();
       p5.stroke(H2 +light1,S,L);
       p5.strokeWeight(2);
@@ -82,7 +98,6 @@ function sketch(p5) {
 
     if(res <= 0.004 || res >= 0.022){move *=-1};
     res += move;
-    // console.log(p5.mouseX);
   };
 
   p5.mouseMoved = function() {
@@ -96,12 +111,13 @@ function sketch(p5) {
 
 function App() {
   const [accounts, setAccounts] = useState([]);
+  const [theme, setTheme] = useState("dark");
 
   return (
-    <div className="App">
-      {/* <div className='main'> */}
+    <ThemeContext.Provider value ={{theme, setTheme}}>
+      <div className="App" id={theme}>
         <div className='sideLeft'>
-          <HeaderLeft/>
+          <HeaderSocial/>
           <About/>
           <Team/>
         </div>
@@ -109,12 +125,15 @@ function App() {
          <ReactP5Wrapper sketch={sketch}/>
         </div>
         <div className='sideRight'>
-          <HeaderRight accounts={accounts} setAccounts={setAccounts}/>
-          <Mint accounts={accounts} setAccounts={setAccounts}/>
+          <div className="headerR">
+            <WalletConnect setAccounts={setAccounts}/>
+            <DarkMode theme={theme} setTheme={setTheme}/>
+          </div>
+          {/* <HeaderMint setAccounts={setAccounts} theme={theme} setTheme={setTheme}/> */}
+          <Mint accounts={accounts}/>
         </div>
-
-      {/* </div> */}
     </div>
+    </ThemeContext.Provider>
   );
 }
 

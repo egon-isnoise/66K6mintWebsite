@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {FaEthereum, FaLeaf} from 'react-icons/fa'
-import { ethers, BigNumber } from 'ethers';
+import { ethers } from 'ethers';
+import toast, { Toaster } from 'react-hot-toast';
 import './mint.css';
 import GIF from '../../assets/9output.gif';
 import SixSixkSixNFTABI from '../../6Sick6NFT.json';
@@ -31,6 +32,7 @@ const Mint = ({ accounts }) => {
                 signer
             );
             try {
+                toast.success('Your NFT is on its way...\n\nWAIT for MetaMask to pop up!');
                 const response = await contract.mint(accounts[0], mintAmount);
                 console.log('response: ', response);
 
@@ -43,6 +45,13 @@ const Mint = ({ accounts }) => {
 
     return(
         <section id="mint">
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+                toastOptions={{
+                    duration:6000
+                }}
+            />
             <div className="container mint__container">
                 <div className="sick_gif">
                     <img src={GIF} alt="6sick6 gif"/>
