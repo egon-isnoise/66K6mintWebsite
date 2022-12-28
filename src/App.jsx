@@ -41,7 +41,7 @@ function sketch(p5) {
     for(let r = 0; r < radius; r += radius/nRings){
       p5.beginShape();
       p5.stroke(H1,60,40);
-      p5.strokeWeight(2);
+      p5.strokeWeight(3);
         for(let a = 0; a <= p5.TAU; a += p5.TAU/nPoints){
             var x = w/2 + r *p5.cos(a);
             var y = h/2 + r *p5.sin(a);
