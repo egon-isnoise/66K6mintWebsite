@@ -29,13 +29,13 @@ body {
 }
 
 #light {
-  --general-background: hsl(67, 22%, 92%);
-  --text-color: hsl(0, 0%, 20%);
+  --general-background: hsl(67, 22%, 72%);
+  --text-color: hsl(0, 0%, 14%);
 }
 
 #dark {
-  --general-background: hsl(0, 0%, 20%);
-  --text-color: hsl(67, 22%, 82%);
+  --general-background: hsl(0, 0%, 14%);
+  --text-color: hsl(67, 22%, 77%);
 }
 
 .sideLeft {
