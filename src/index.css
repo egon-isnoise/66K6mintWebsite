@@ -30,7 +30,7 @@ body {
 }
 
 #light {
-  --general-background: hsl(67, 22%, 72%);
+  --general-background: hsl(67, 10%, 77%);
   --text-color: hsl(0, 0%, 14%);
 }
 
