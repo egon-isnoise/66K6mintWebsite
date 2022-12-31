@@ -32,11 +32,11 @@ function sketch(p5) {
     p5.clear();
 
     p5.noFill();
-    var H1 = p5.map(res, 0, 0.03, 170, 250);
+    var H1 = p5.map(res, 0, 0.03, 170, 230);
     var H2 = p5.map(res, 0, 0.03, 130, 190);
-    var H3 = p5.map(res, 0, 0.03, 230, 275);
-    var S = p5.map(res, 0, 0.03, 30, 60);
-    var L = p5.map(res, 0, 0.03, 10, 50);
+    var H3 = p5.map(res, 0, 0.03, 230, 235);
+    var S = p5.map(res, 0, 0.03, 30, 50);
+    var L = p5.map(res, 0, 0.03, 10, 40);
     
     for(let r = 0; r < radius; r += radius/nRings){
       p5.beginShape();
