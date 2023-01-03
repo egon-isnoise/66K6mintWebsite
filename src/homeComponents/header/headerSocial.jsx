@@ -1,7 +1,7 @@
 import React from 'react';
 import './headerSocial.css';
 import {FaInstagramSquare, FaTwitterSquare, FaDiscord} from 'react-icons/fa'
-import { Egonisnoise } from '../icons/egonisnoise';
+import { Noise } from '../icons/noise';
 import { Etherscan } from '../icons/etherscan';
 
 const HeaderSocial = () => {
@@ -11,7 +11,9 @@ const HeaderSocial = () => {
             <div className='headerL'>
                 <div className="container header__socials">
                     <a href="#home" target="_blank" rel="noreferrer">
-                        <Egonisnoise/>
+                        <div className="egonisnoise">
+                            <Noise/>
+                        </div>
                     </a>
                     <a href="#home" target="_blank" rel="noreferrer">
                         <FaInstagramSquare/>

@@ -21,6 +21,12 @@
     color: var(--text-color);
 }
 
+.egonisnoise {
+    width: 2.8vw;
+    padding-bottom: .5vh;
+    /* background-color: blue; */
+}
+
 svg {
     fill: var(--text-color);
 }

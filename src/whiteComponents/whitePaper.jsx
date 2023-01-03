@@ -1,11 +1,7 @@
 import React from 'react';
 import { useState, createContext } from 'react';
-import DarkMode from './components/header/darkMode';
-import WalletConnect from './components/header/walletConnect';
-import HeaderSocial from './components/header/headerSocial';
-import Mint from './components/mint/mint';
-import About from './components/about/about';
-import Team from './components/team/team';
+import DarkMode from '../homeComponents/header/darkMode';
+import HeaderSocial from '../homeComponents/header/headerSocial';
 import { ReactP5Wrapper} from "react-p5-wrapper";
 
 export const ThemeContext = createContext(null);
@@ -109,8 +105,7 @@ function sketch(p5) {
   };
 }
 
-function App() {
-  const [accounts, setAccounts] = useState([]);
+function WhitePaper() {
   const [theme, setTheme] = useState("dark");
 
   return (
@@ -118,23 +113,18 @@ function App() {
       <div className="App" id={theme}>
         <div className='sideLeft'>
           <HeaderSocial/>
-          <About/>
-          <Team/>
         </div>
         <div className='center'>
          <ReactP5Wrapper sketch={sketch}/>
         </div>
         <div className='sideRight'>
           <div className="headerR">
-            <WalletConnect setAccounts={setAccounts}/>
             <DarkMode theme={theme} setTheme={setTheme}/>
           </div>
-          {/* <HeaderMint setAccounts={setAccounts} theme={theme} setTheme={setTheme}/> */}
-          <Mint accounts={accounts}/>
         </div>
     </div>
     </ThemeContext.Provider>
   );
 }
 
-export default App;
+export default WhitePaper;
