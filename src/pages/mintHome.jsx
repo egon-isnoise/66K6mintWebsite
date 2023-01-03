@@ -10,7 +10,6 @@ import { ReactP5Wrapper} from "react-p5-wrapper";
 
 export const ThemeContext = createContext(null);
 
-
 function sketch(p5) {
   let scale = 30;
   let res = 0.016;

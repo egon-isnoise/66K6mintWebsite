@@ -30,15 +30,26 @@
     height: 26vh;
     margin-top: 5vh;
     padding-bottom: 2vh;
-    background-image: url("../../assets/nnneon5.svg");
+    background-image: url("../../assets/wwwhirl4.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     /* background-color: aqua; */
 }
-
+/* 
 .mint_icons {
     padding: 6vh;
     font-size: 2vw;
+} */
+
+.pre_mint {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../../assets/wwwhirl.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;  */
+    /* background-color: aqua; */
 }
 
 .minting_button {

@@ -3,9 +3,9 @@ import {FaEthereum, FaLeaf} from 'react-icons/fa';
 import {IoIosPaper} from 'react-icons/io';
 import { ethers } from 'ethers';
 import toast, { Toaster } from 'react-hot-toast';
-import './mint.css';
 import GIF from '../../assets/9output9.gif';
 import SixSixkSixNFTABI from '../../6Sick6NFT.json';
+import './mint.css';
 
 const SixSixkSixNFTaddress = "0xA0253d08AC1736b9445BD4A2e75B876fEcF89aee";
 
@@ -85,18 +85,23 @@ const Mint = ({ accounts }) => {
                                     className="minting_button"
                                     onClick={handleMint}
                                 >Mint</button>
+
+                                <br />
+                                <br />
+                                <p>0.1 ETH x NFT</p>
+                                <p>max 10 mints x wallet</p>
                             </div>
-                            <br />
-                            <br />
-                            <p>0.1 ETH x NFT</p>
-                            <p>max 10 mints x wallet</p>
+                        
                         </>  
                     ):(
                         <>
-                        <h1>Connect MetaMask to Mint</h1>
-                        <div className="mint_icons">
-                           <FaEthereum/>
-                           <FaLeaf/>
+                        <div className="pre_mint">
+                            <h1>Connect MetaMask to Mint</h1>
+                            {/* <div className="mint_icons">
+                            <FaEthereum/>
+                            <FaLeaf/>
+                            </div> */}
+
                         </div>
                         </>
                     )}
