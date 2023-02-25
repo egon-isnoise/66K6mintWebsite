@@ -17,6 +17,7 @@
     "react-icons": "^4.7.1",
     "react-p5-wrapper": "^3.4.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9",
     "styled-components": "^5.3.6",
     "theme-ui": "^0.15.4",
     "web-vitals": "^2.1.4"

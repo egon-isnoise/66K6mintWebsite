@@ -4,12 +4,13 @@
     /* align-items: flex-start; */
     justify-content: space-around;
     text-align: center;
-    gap: 2vh;
-    height: 45vh;
-    width: 20vw;
+    gap: 10vh;
+    /* height: 45vh; */
+    width: 50vw;
     margin-left: 1vw;
-    padding: 1vw;
-    padding-top: 6vh;
+    padding: 10vw;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     /* background-color: blueviolet; */
 }
 

@@ -1,0 +1,40 @@
+
+.footer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    width: 50vw;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    align-items: center;
+    margin: auto;
+}
+
+.footer__socials {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vw;
+    gap: 0.5vw;
+}
+
+.footer__socials a {
+    font-size: 3vw;
+    color: var(--text-color);
+}
+
+.egonisnoise {
+    width: 2.8vw;
+    padding-bottom: .5vh;
+}
+
+.etherscan {
+    width: 4.5vw;
+}
+
+svg {
+    fill: var(--text-color);
+}

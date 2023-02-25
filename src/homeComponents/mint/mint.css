@@ -4,15 +4,16 @@
     align-items: center;
     justify-content: center;
     gap: 3vh;
-    height: 86vh;
-    width: 22vw;
+    /* height: 88vh; */
+    width: 50vw;
     margin-right: 1vw;
     /* background-color: aqua; */
 }
 
 .sick_gif {
-    width: 20vw;
-    padding-top: 2vh;
+    width: 24vw;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 
 .sick_gif img {
@@ -27,12 +28,12 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 26vh;
+    /* height: 30vh; */
     margin-top: 5vh;
-    padding-bottom: 2vh;
-    background-image: url("../../assets/wwwhirl4.svg");
+    padding-bottom: 5vh;
+    /* background-image: url("../../assets/wwwhirl4.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 50%; */
     /* background-color: aqua; */
 }
 /* 

@@ -1,9 +1,19 @@
 import React, {useState} from 'react';
+import {FaInstagramSquare, FaTwitterSquare, FaDiscord} from 'react-icons/fa'
+import { Noise } from '../icons/noise';
+// import { Etherscan } from '../icons/etherscan';
 import toast, { Toaster } from 'react-hot-toast';
-import './walletConnect.css';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Switch from '@mui/material/Switch';
+import './mainHeader.css';
+// import './walletConnect.css';
 
 
-const WalletConnect = ({ setAccounts }) => {
+const MainHeader = ({ setAccounts, theme, setTheme }) => {
+    const toggleTheme = () =>{
+        setTheme((curr) => (curr === "light" ? "dark" : "light"));
+    }
+
     const [connButtonText, setConnButtonText] = useState('Connect Wallet');
 
     async function connectWalletHandler(){
@@ -45,19 +55,45 @@ const WalletConnect = ({ setAccounts }) => {
     }
 
     return (
+        <>
         <section>
-            <Toaster
-                position="top-center"
-                reverseOrder={false}
-            />
+            <div className='header'>
+                <div className="container header__socials">
+                    <a href="egonisnoise" target="_blank" rel="noreferrer">
+                        <div className="egonisnoise">
+                            <Noise/>
+                        </div>
+                    </a>
+                    {/* <a href="#home" target="_blank" rel="noreferrer">
+                        <FaInstagramSquare/>
+                    </a> */}
+                    <a href="#home" target="_blank" rel="noreferrer">
+                        <FaTwitterSquare/>
+                    </a>
+                    <a href="#home" target="_blank" rel="noreferrer">
+                        <FaDiscord/>
+                    </a>
+                </div>
+
+                <Toaster
+                    position="top-center"
+                    reverseOrder={false}
+                />
                 <div className="container header__connection">
+                    <Brightness4Icon sx={{ fontSize: 55 }}/>
+                    <Switch color="default" sx={{ fontSize: 50 }}
+                        onChange={toggleTheme} 
+                        checked={theme === "dark"}
+                    />
                     <button
                         onClick={connectWalletHandler}
                     >{connButtonText}
                     </button>
                 </div>
+            </div>
         </section>
+        </>
     )
 }
 
-export default WalletConnect
+export default MainHeader

@@ -1,11 +1,8 @@
 import React from 'react';
 import { useState, createContext } from 'react';
+// import DarkMode from '../homeComponents/header/darkMode';
+// import HeaderSocial from '../homeComponents/header/headerSocial';
 import { ReactP5Wrapper} from "react-p5-wrapper";
-import MainHeader from '../homeComponents/header/mainHeader';
-import Mint from '../homeComponents/mint/mint';
-import About from '../homeComponents/about/about';
-import Team from '../homeComponents/team/team';
-import MainFooter from '../homeComponents/footer/mainFooter';
 
 export const ThemeContext = createContext(null);
 
@@ -13,23 +10,17 @@ function sketchL(p5) {
   let scale = 30;
   let res = 0.016;
   let nPoints = 350;
+  let nRings = 40;
   let move = 0.000035;
   let light1;
   let w = p5.windowWidth * 0.25;
-  let h = p5.windowHeight;
-  let radius1, radius2;
-  let w1, h1, w2, h2;
+  let h = p5.windowHeight * 0.92;
+  let radius;
 
   p5.setup = () => {
     p5.createCanvas(w, h);
     p5.colorMode(p5.HSL);
-    radius1 = w * 0.85;
-    radius2 = w * 0.25;
-
-    w1 = w *0.1;
-    h1 = h * 0.8;
-    w2 = w *0.7;
-    h2 = h * 0.2;
+    radius = w * 0.85;
   }
 
   p5.draw = () => {
@@ -42,15 +33,14 @@ function sketchL(p5) {
     var S = p5.map(res, 0, 0.03, 30, 50);
     var L = p5.map(res, 0, 0.03, 10, 40);
     
-    p5.waterBall(w1, h1, radius1, 40, H1, H2, H3, S, L);
-    p5.waterBall(w2, h2, radius2, 20, H1, H2, H3, S, L);
+    p5.waterBall(0, h, radius, H1, H2, H3, S, L);
 
     if(res <= 0.004 || res >= 0.022){move *=-1};
     res += move;
   };
 
-  p5.waterBall = function(X, Y, RAD, RINGS, H1, H2, H3, S, L){
-    for(let r = 0; r < RAD; r += RAD/RINGS){
+  p5.waterBall = function(X, Y, RAD, H1, H2, H3, S, L){
+    for(let r = 0; r < RAD; r += RAD/nRings){
       p5.beginShape();
       p5.stroke(H1,60,40);
       p5.strokeWeight(3);
@@ -109,6 +99,10 @@ function sketchL(p5) {
     }
 
   }
+
+  p5.mouseMoved = function() {
+    res = p5.map(p5.mouseX, -400, p5.windowWidth, 0.005, 0.022);
+  };
 
   p5.windowResized = function() {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
@@ -119,10 +113,11 @@ function sketchR(p5) {
   let scale = 30;
   let res = 0.016;
   let nPoints = 350;
+  let nRings = 40;
   let move = 0.000035;
   let light1;
   let w = p5.windowWidth * 0.25;
-  let h = p5.windowHeight;
+  let h = p5.windowHeight * 0.92;
   let rads = [];
   let ws = [];
   let hs = [];
@@ -132,21 +127,21 @@ function sketchR(p5) {
     p5.colorMode(p5.HSL);
 
     rads = [
-      w * 0.2,
-      w * 0.25,
-      w * 0.45,
+      w * p5.random(0.15, 0.35),
+      w * p5.random(0.15, 0.35),
+      w * p5.random(0.15, 0.35),
     ]
 
     ws = [
-      w/3.7,
-      w/2.5,
-      w/1.3,
+      p5.random(w/2),
+      p5.random(w),
+      p5.random(w/2, w),
     ]
 
     hs = [
-      h/1.7,
-      h/1.2,
-      h/4,
+      p5.random(h/2),
+      p5.random(h),
+      p5.random(h/2, h),
     ]
   }
 
@@ -160,16 +155,17 @@ function sketchR(p5) {
     var S = p5.map(res, 0, 0.03, 30, 50);
     var L = p5.map(res, 0, 0.03, 10, 40);
     
-    p5.waterBall(ws[0], hs[0], rads[0], 15, H1, H2, H3, S, L);
-    p5.waterBall(ws[1], hs[1], rads[1], 20, H1, H2, H3, S, L);
-    p5.waterBall(ws[2], hs[2], rads[2], 30, H1, H2, H3, S, L);
+    for(let l = 0; l < 3; l ++){
+      p5.waterBall(ws[l], hs[l], rads[l], H1, H2, H3, S, L);
+
+    }
 
     if(res <= 0.004 || res >= 0.022){move *=-1};
     res += move;
   };
 
-  p5.waterBall = function(X, Y, RAD, RINGS, H1, H2, H3, S, L){
-    for(let r = 0; r < RAD; r += RAD/RINGS){
+  p5.waterBall = function(X, Y, RAD, H1, H2, H3, S, L){
+    for(let r = 0; r < RAD; r += RAD/nRings){
       p5.beginShape();
       p5.stroke(H1,60,40);
       p5.strokeWeight(3);
@@ -229,38 +225,36 @@ function sketchR(p5) {
 
   }
 
+  p5.mouseMoved = function() {
+    res = p5.map(p5.mouseX, -400, p5.windowWidth, 0.005, 0.022);
+  };
+
   p5.windowResized = function() {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
   };
 }
 
-
-function Home() {
-  const [accounts, setAccounts] = useState([]);
+function WhitePaper() {
   const [theme, setTheme] = useState("dark");
 
   return (
     <ThemeContext.Provider value ={{theme, setTheme}}>
       <div className="App" id={theme}>
-        <div className="sideLeft">
+        <div className='sideLeft'>
+          {/* <HeaderSocial/> */}
           <div className="p5Left">
-              <ReactP5Wrapper sketch={sketchL}/>
+            <ReactP5Wrapper sketch={sketchL}/>
           </div>
         </div>
-        <div className="center">
-          <div className='mainHeader'>
-            <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
-            {/* <About/>
-            <Team/> */}
-          </div>
-          <Mint accounts={accounts}/>
-          <About/>
-          <Team/> 
-          <MainFooter/>
+        <div className='center'>
+         {/* <ReactP5Wrapper sketch={sketch}/> */}
         </div>
-        <div className="sideRight">
+        <div className='sideRight'>
+          <div className="headerR">
+            {/* <DarkMode theme={theme} setTheme={setTheme}/> */}
+          </div>
           <div className="p5Right">
-              <ReactP5Wrapper sketch={sketchR}/>
+            <ReactP5Wrapper sketch={sketchR}/>
           </div>
         </div>
     </div>
@@ -268,4 +262,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default WhitePaper;

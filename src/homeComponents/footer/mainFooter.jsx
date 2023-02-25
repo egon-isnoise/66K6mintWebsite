@@ -1,22 +1,20 @@
 import React from 'react';
-import './headerSocial.css';
-import {FaInstagramSquare, FaTwitterSquare, FaDiscord} from 'react-icons/fa'
+import {FaTwitterSquare, FaDiscord} from 'react-icons/fa'
 import { Noise } from '../icons/noise';
 import { Etherscan } from '../icons/etherscan';
+import './mainFooter.css';
 
-const HeaderSocial = () => {
+const MainFooter = () => {
 
     return (
+        <>
         <section>
-            <div className='headerL'>
-                <div className="container header__socials">
-                    <a href="#home" target="_blank" rel="noreferrer">
+            <div className='footer'>
+                <div className="container footer__socials">
+                    <a href="egonisnoise" target="_blank" rel="noreferrer">
                         <div className="egonisnoise">
                             <Noise/>
                         </div>
-                    </a>
-                    <a href="#home" target="_blank" rel="noreferrer">
-                        <FaInstagramSquare/>
                     </a>
                     <a href="#home" target="_blank" rel="noreferrer">
                         <FaTwitterSquare/>
@@ -26,12 +24,15 @@ const HeaderSocial = () => {
                     </a>
                     <a href="https://goerli.etherscan.io/address/0xa0253d08ac1736b9445bd4a2e75b876fecf89aee" 
                         target="_blank" rel="noreferrer">
-                        <Etherscan/>
+                            <div className="etherscan">
+                                <Etherscan/>
+                            </div>
                     </a>
                 </div>
             </div>
         </section>
+        </>
     )
 }
 
-export default HeaderSocial
+export default MainFooter
