@@ -5,7 +5,7 @@
     flex-direction: row;
     height: 12vh;
     width: 50vw;
-    padding-top: 15vh;
+    padding-top: 10vh;
     padding-bottom: 10vh;
     align-items: center;
     margin: auto;
@@ -39,7 +39,7 @@ svg {
     .footer {
         width: 100vw;
         padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding-bottom: 10vh;
     }
 
     .footer__socials a {
@@ -49,5 +49,5 @@ svg {
     .etherscan {
         display: none;
     }
-
   }
+
