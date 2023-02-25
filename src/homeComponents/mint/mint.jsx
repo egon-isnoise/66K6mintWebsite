@@ -97,11 +97,6 @@ const Mint = ({ accounts }) => {
                         <>
                         <div className="pre_mint">
                             <h1>Connect MetaMask to Mint</h1>
-                            {/* <div className="mint_icons">
-                            <FaEthereum/>
-                            <FaLeaf/>
-                            </div> */}
-
                         </div>
                         </>
                     )}

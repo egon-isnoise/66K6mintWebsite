@@ -58,15 +58,12 @@ const MainHeader = ({ setAccounts, theme, setTheme }) => {
         <>
         <section>
             <div className='header'>
-                <div className="container header__socials">
+                <div className="header__socials">
                     <a href="egonisnoise" target="_blank" rel="noreferrer">
                         <div className="egonisnoise">
                             <Noise/>
                         </div>
                     </a>
-                    {/* <a href="#home" target="_blank" rel="noreferrer">
-                        <FaInstagramSquare/>
-                    </a> */}
                     <a href="#home" target="_blank" rel="noreferrer">
                         <FaTwitterSquare/>
                     </a>
@@ -80,11 +77,14 @@ const MainHeader = ({ setAccounts, theme, setTheme }) => {
                     reverseOrder={false}
                 />
                 <div className="container header__connection">
-                    <Brightness4Icon sx={{ fontSize: 55 }}/>
-                    <Switch color="default" sx={{ fontSize: 50 }}
-                        onChange={toggleTheme} 
-                        checked={theme === "dark"}
-                    />
+                    <div className="dark__mode">
+                        <Brightness4Icon sx={{ fontSize: 65 }}/>
+                        <Switch color="default" sx={{ fontSize: 50 }}
+                            onChange={toggleTheme} 
+                            checked={theme === "dark"}
+                        />
+                    </div>
+
                     <button
                         onClick={connectWalletHandler}
                     >{connButtonText}

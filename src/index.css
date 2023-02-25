@@ -81,4 +81,13 @@ body {
   position: fixed;
 }
 
+svg {
+  fill: var(--text-color);
+}
 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 1024px) {
+  .center {
+    width: 100vw;
+  }
+}

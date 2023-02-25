@@ -22,19 +22,32 @@
 }
 
 .footer__socials a {
-    font-size: 3vw;
-    color: var(--text-color);
-}
-
-.egonisnoise {
-    width: 2.8vw;
-    padding-bottom: .5vh;
+    font-size: 4.5vw;
 }
 
 .etherscan {
-    width: 4.5vw;
+    width: 6vw;
 }
 
 svg {
     fill: var(--text-color);
 }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 1024px) {
+
+    .footer {
+        width: 100vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .footer__socials a {
+        font-size: 15vw;
+    }
+
+    .etherscan {
+        display: none;
+    }
+
+  }

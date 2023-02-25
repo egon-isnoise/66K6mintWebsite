@@ -11,7 +11,7 @@
 }
 
 .sick_gif {
-    width: 24vw;
+    width: 26vw;
     padding-top: 10vh;
     padding-bottom: 5vh;
 }
@@ -28,29 +28,9 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    /* height: 30vh; */
     margin-top: 5vh;
     padding-bottom: 5vh;
-    /* background-image: url("../../assets/wwwhirl4.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%; */
-    /* background-color: aqua; */
-}
-/* 
-.mint_icons {
-    padding: 6vh;
-    font-size: 2vw;
-} */
-
-.pre_mint {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    /* background-image: url("../../assets/wwwhirl.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;  */
-    /* background-color: aqua; */
+    font-size: 3vh;
 }
 
 .minting_button {
@@ -72,7 +52,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /* background-color: aqua; */
     padding-bottom: 2.4vh;
 }
 
@@ -97,3 +76,30 @@ button:hover {
 .more_icon {
     padding: 1vw;
 }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 1024px) {
+    .mint__container {
+        width: 100vw;
+    }
+    .sick_gif {
+        width: 70vw;
+        padding-top: 7vh;
+        padding-bottom: 2vh;
+    }
+
+    .more_less a {
+        font-size: 5vh;
+    }
+
+    .more_less button {
+        width: 10vw;
+        padding: 1vw;
+        margin: 3vw;
+    }
+
+    .minting_button {
+        width: 25vw;
+        font-size: 4vh;
+    }
+  }

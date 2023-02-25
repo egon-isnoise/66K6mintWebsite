@@ -236,36 +236,65 @@ function sketchR(p5) {
 
 
 function Home() {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 1024;
+
+  React.useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+     // subscribe to window resize event "onComponentDidMount"
+     window.addEventListener("resize", handleResizeWindow);
+     return () => {
+       // unsubscribe "onComponentDestroy"
+       window.removeEventListener("resize", handleResizeWindow);
+     };
+   }, []);
+
   const [accounts, setAccounts] = useState([]);
   const [theme, setTheme] = useState("dark");
 
-  return (
-    <ThemeContext.Provider value ={{theme, setTheme}}>
-      <div className="App" id={theme}>
-        <div className="sideLeft">
-          <div className="p5Left">
-              <ReactP5Wrapper sketch={sketchL}/>
+  if (width > breakpoint) {
+    return (
+      <ThemeContext.Provider value ={{theme, setTheme}}>
+        <div className="App" id={theme}>
+          <div className="sideLeft">
+            <div className="p5Left">
+                <ReactP5Wrapper sketch={sketchL}/>
+            </div>
           </div>
-        </div>
-        <div className="center">
-          <div className='mainHeader'>
-            <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
-            {/* <About/>
-            <Team/> */}
+          <div className="center">
+            <div className='mainHeader'>
+              <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
+            </div>
+            <Mint accounts={accounts}/>
+            <About/>
+            <Team/> 
+            <MainFooter/>
           </div>
-          <Mint accounts={accounts}/>
-          <About/>
-          <Team/> 
-          <MainFooter/>
-        </div>
-        <div className="sideRight">
-          <div className="p5Right">
-              <ReactP5Wrapper sketch={sketchR}/>
+          <div className="sideRight">
+            <div className="p5Right">
+                <ReactP5Wrapper sketch={sketchR}/>
+            </div>
           </div>
-        </div>
-    </div>
-    </ThemeContext.Provider>
-  );
+      </div>
+      </ThemeContext.Provider>
+    );
+  } else {
+    return (
+      <ThemeContext.Provider value ={{theme, setTheme}}>
+        <div className="App" id={theme}>
+          <div className="center">
+            <div className='mainHeader'>
+              <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
+            </div>
+            <Mint accounts={accounts}/>
+            <About/>
+            <Team/> 
+            <MainFooter/>
+          </div>
+      </div>
+      </ThemeContext.Provider>
+    );
+  }
 }
 
 export default Home;

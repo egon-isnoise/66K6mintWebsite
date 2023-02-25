@@ -4,22 +4,46 @@
     /* align-items: flex-start; */
     justify-content: space-around;
     text-align: center;
-    gap: 10vh;
+    gap: 7.5vh;
     /* height: 45vh; */
     width: 50vw;
-    margin-left: 1vw;
+    /* margin-left: 1vw; */
     padding: 10vw;
     padding-top: 15vh;
-    padding-bottom: 15vh;
+    padding-bottom: 20vh;
     /* background-color: blueviolet; */
 }
 
 .description_container >* {
-    font-size: 1.6vh;
+    font-size: 2vh;
     color: var(--text-color);
 }
 
 .roadmap > a {
-    font-size: 3vh;
-    padding: 1vh;
+    font-size: 5vh;
+    padding: 2vh;
 }
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 1024px) {
+
+    .description_container {
+        width: 100vw;
+        padding-top: 5vh;
+    }
+
+    .why {
+        font-size: 4vw;
+    }
+
+    .roadmap {
+        font-size: 4vw;
+    }
+
+    .roadmap > a {
+        font-size: 5vh;
+    }
+
+
+  }

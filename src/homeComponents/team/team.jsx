@@ -1,6 +1,6 @@
 import React from "react";
 import './team.css';
-import IMAGE1 from '../../assets/egon.jpg'
+import IMAGE1 from '../../assets/logoNegative.jpg'
 import IMAGE2 from '../../assets/xefler.png'
 import {FaInstagramSquare, FaTwitterSquare} from 'react-icons/fa'
 

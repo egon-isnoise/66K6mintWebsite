@@ -16,22 +16,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 2vh;
     padding-left: 2vw;
     gap: 0.5vw;
 }
 
 .header__socials a {
-    font-size: 3vw;
-    color: var(--text-color);
+    font-size: 4.5vw;
 }
 
 .egonisnoise {
-    width: 2.8vw;
-    padding-bottom: .5vh;
-}
-
-svg {
-    fill: var(--text-color);
+    width: 4vw;
+    padding-bottom: .8vh;
 }
 
 .header__connection {
@@ -45,10 +41,16 @@ svg {
     gap: 0.5vw;
 }
 
+.dark__mode{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
 .header__connection button {
     font-family: 'Merriweather', sans-serif;
-    font-size: 1.2rem;
-    padding: .8vw;
+    font-size: 1.4rem;
+    padding: 1vw;
     border: 3px solid var(--text-color);
     color: var(--text-color);
     background-color: var(--general-background);
@@ -58,3 +60,39 @@ svg {
 button:hover {
     cursor: pointer;
 }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 1024px) {
+
+    .header {
+        width: 100vw;
+        padding: 1vh;
+    }
+
+    .header__socials {
+        padding-top: 2vh;
+        font-size: 130vw;
+    }
+
+    .header__socials a {
+        font-size: 15vw;
+    }
+
+    .egonisnoise {
+        display: none;
+    }
+
+    .dark__mode {
+        display: none;
+    }
+
+    .header__connection {
+        padding-left: 2vw;
+    }
+
+    .header__connection button {
+        font-size: 1.4rem;
+        padding: 1vw;
+    }
+
+  }
