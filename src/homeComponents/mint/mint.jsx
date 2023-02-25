@@ -3,7 +3,7 @@ import {FaEthereum, FaLeaf} from 'react-icons/fa';
 import {IoIosPaper} from 'react-icons/io';
 import { ethers } from 'ethers';
 import toast, { Toaster } from 'react-hot-toast';
-import GIF from '../../assets/9output9.gif';
+import GIF from '../../assets/11th.gif';
 import SixSixkSixNFTABI from '../../6Sick6NFT.json';
 import './mint.css';
 
