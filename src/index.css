@@ -16,6 +16,7 @@ html {
 
 body {
   font-family: 'Merriweather', sans-serif;
+  overflow:visible;
 }
 
 .App {
@@ -27,11 +28,6 @@ body {
   flex-direction: column;
   background-color: var(--general-background);
   color: var(--text-color);
-  /* background-image: url("assets/mmmotif.svg");
-  background-repeat: no-repeat;
-  background-size: cover; */
-  /* background-position: center; */
-
 }
 
 #light {
@@ -52,51 +48,16 @@ body {
   background-size: cover;
 }
 
-/* .sideLeft {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 25vw;
-}
-
-.p5Left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 25vw;
-  position: fixed;
-} */
-
-.center {
-  width: 100vw;
-}
-
-/* .sideRight {
-  align-items: center;
-  height: 100vh;
-  width: 25vw;
-}
-
-.p5Right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 88vh;
-  width: 25vw;
-  position: fixed;
-} */
 
 svg {
   fill: var(--text-color);
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 1020px) {
-  .center {
+@media only screen and (max-width: 420px) {
+  /* .center {
     width: 100vw;
     background-color: hsla(0, 0%, 14%, 55%);
-  }
+  } */
 }
 

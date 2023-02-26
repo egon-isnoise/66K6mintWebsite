@@ -1,7 +1,7 @@
 import React from "react";
 import './team.css';
 import IMAGE1 from '../../assets/logoNegative.jpg'
-import IMAGE2 from '../../assets/xefler.png'
+import IMAGE2 from '../../assets/gioggio.png'
 import {FaInstagramSquare, FaTwitterSquare} from 'react-icons/fa'
 
 const Team = () => {
@@ -28,7 +28,7 @@ const Team = () => {
                     <img src={IMAGE2} alt="Xefler"/>
                     <div className="description_socials">
                         <h1> Design </h1>
-                        <p>Xefler</p>
+                        <p>puleo.giorgio</p>
                         <div className="links_socials">
                             <a href="https://www.instagram.com/xefler_/?theme=dark" target="_blank" rel="noreferrer">
                                 <FaInstagramSquare/>

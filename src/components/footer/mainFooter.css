@@ -4,9 +4,10 @@
     display: flex;
     flex-direction: row;
     height: 12vh;
-    width: 100vw;
+    width: 90vw;
     padding-top: 5vh;
     padding-bottom: 3vh;
+    margin-bottom: 3vh;
     align-items: center;
     margin: auto;
     background: var(--glass-background);
@@ -28,24 +29,24 @@
 }
 
 .footer__socials a {
-    font-size: 4.5vw;
+    font-size: 3vw;
 }
 
 .etherscan {
-    width: 6vw;
+    width: 4vw;
 }
 
 svg {
     fill: var(--text-color);
 }
 
-@media only screen and (max-width: 1020px) {
-
-    .footer {
-        width: 100vw;
+/* SMARTPHONES (portrait) ----------- */
+@media only screen and (max-width: 420px) {
+/* 
+    .footer { 
         padding-top: 5vh;
-        padding-bottom: 10vh;
-    }
+        padding-bottom: 5vh;
+    } */
 
     .footer__socials a {
         font-size: 15vw;

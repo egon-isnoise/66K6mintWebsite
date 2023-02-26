@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 3vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .sick_gif {
@@ -81,7 +81,7 @@ button:hover {
     padding: 1vw;
 }
 
-/* Smartphones (portrait) ----------- */
+/* TABLETS portraits ----------- */
 @media only screen and (max-width: 1020px) {
     .mint__container {
         width: 100vw;
@@ -90,6 +90,11 @@ button:hover {
         width: 70vw;
         padding-top: 7vh;
         padding-bottom: 2vh;
+    }
+
+    .full_minting {
+        width: 70%;
+        font-size: 2vh;
     }
 
     .more_less a {
@@ -103,8 +108,40 @@ button:hover {
     }
 
     .minting_button {
-        width: 25vw;
-        font-size: 4vh;
+        width: 30vw;
+        font-size: 3.5vh;
+    }
+  }
+
+/* SMARTPHONES 1 portraits ----------- */
+@media only screen and (max-width: 412px) {
+    .mint__container {
+        width: 100vw;
+    }
+    .sick_gif {
+        width: 70vw;
+        padding-top: 7vh;
+        padding-bottom: 2vh;
+    }
+
+    .full_minting {
+        width: 70%;
+        font-size: 2vh;
+    }
+
+    .more_less a {
+        font-size: 5vh;
+    }
+
+    .more_less button {
+        width: 10vw;
+        padding: 1vw;
+        margin: 3vw;
+    }
+
+    .minting_button {
+        width: 30vw;
+        font-size: 3.5vh;
     }
   }
 

@@ -250,7 +250,7 @@ function Home() {
    }, []);
 
   const [accounts, setAccounts] = useState([]);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
     return (
       <ThemeContext.Provider value ={{theme, setTheme}}>
