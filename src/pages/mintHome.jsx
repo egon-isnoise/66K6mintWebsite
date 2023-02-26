@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState, createContext } from 'react';
 import { ReactP5Wrapper} from "react-p5-wrapper";
-import MainHeader from '../homeComponents/header/mainHeader';
-import Mint from '../homeComponents/mint/mint';
-import About from '../homeComponents/about/about';
-import Team from '../homeComponents/team/team';
-import MainFooter from '../homeComponents/footer/mainFooter';
+import MainHeader from '../components/header/mainHeader';
+import Mint from '../components/mint/mint';
+import About from '../components/about/about';
+import Team from '../components/team/team';
+import MainFooter from '../components/footer/mainFooter';
 
 export const ThemeContext = createContext(null);
 
@@ -252,40 +252,13 @@ function Home() {
   const [accounts, setAccounts] = useState([]);
   const [theme, setTheme] = useState("dark");
 
-  if (width > breakpoint) {
     return (
       <ThemeContext.Provider value ={{theme, setTheme}}>
         <div className="App" id={theme}>
-          <div className="sideLeft">
-            <div className="p5Left">
-                <ReactP5Wrapper sketch={sketchL}/>
-            </div>
-          </div>
-          <div className="center">
-            <div className='mainHeader'>
+        <div className='mainHeader'>
               <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
             </div>
-            <Mint accounts={accounts}/>
-            <About/>
-            <Team/> 
-            <MainFooter/>
-          </div>
-          <div className="sideRight">
-            <div className="p5Right">
-                <ReactP5Wrapper sketch={sketchR}/>
-            </div>
-          </div>
-      </div>
-      </ThemeContext.Provider>
-    );
-  } else {
-    return (
-      <ThemeContext.Provider value ={{theme, setTheme}}>
-        <div className="App" id={theme}>
           <div className="center">
-            <div className='mainHeader'>
-              <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
-            </div>
             <Mint accounts={accounts}/>
             <About/>
             <Team/> 
@@ -294,7 +267,7 @@ function Home() {
       </div>
       </ThemeContext.Provider>
     );
-  }
+
 }
 
 export default Home;

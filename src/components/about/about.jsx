@@ -8,7 +8,7 @@ const About = () => {
         <section id="about">
             <div className="description_container">
                 <div className="why">
-                    <h1>Why 66K6?</h1>
+                    <h1>Why AfterImage?</h1>
                     <br />
                     <p>We are born to show the futility of demonizing each other,
                         be it for reason of ideologies, beliefs, race, sexuality or other 

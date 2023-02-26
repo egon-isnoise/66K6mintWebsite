@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState, createContext } from 'react';
 import { ReactP5Wrapper} from "react-p5-wrapper";
-import MainHeader from '../homeComponents/header/mainHeader';
-import MainFooter from '../homeComponents/footer/mainFooter';
+import MainHeader from '../components/header/mainHeader';
+import MainFooter from '../components/footer/mainFooter';
 
 export const ThemeContext = createContext(null);
 

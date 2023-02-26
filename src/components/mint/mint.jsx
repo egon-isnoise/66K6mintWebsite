@@ -3,7 +3,7 @@ import {FaEthereum} from 'react-icons/fa';
 import {IoIosPaper} from 'react-icons/io';
 import { ethers } from 'ethers';
 import toast, { Toaster } from 'react-hot-toast';
-import GIF from '../../assets/11th.gif';
+import GIF from '../../assets/luceTrioRVB40.jpeg';
 import SixSixkSixNFTABI from '../../6Sick6NFT.json';
 import './mint.css';
 
@@ -61,11 +61,6 @@ const Mint = ({ accounts }) => {
                     {isConnected ? (
                         <>
                         <div className="more_less">
-                            <div className="more_icon">
-                            <a href="#home" target="_blank" rel="noreferrer">
-                                <IoIosPaper/>
-                            </a>
-                            </div>
                             <button className='increments'
                                 onClick={handleDecrement}
                             >-</button>
@@ -73,11 +68,6 @@ const Mint = ({ accounts }) => {
                             <button className='increments'
                                 onClick={handleIncrement}
                             >+</button>
-                            <div className="more_icon">
-                            <a href="#home" target="_blank" rel="noreferrer">
-                                <FaEthereum/>
-                            </a>
-                            </div>
                         </div>
                             <div>
                                 <button
