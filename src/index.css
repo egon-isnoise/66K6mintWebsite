@@ -25,16 +25,25 @@ body {
   flex-direction: row;
   background-color: var(--general-background);
   color: var(--text-color);
+
 }
 
 #light {
   --general-background: hsl(67, 10%, 77%);
   --text-color: hsl(0, 0%, 14%);
+  background-image: url("assets/ffflux.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #dark {
   --general-background: hsl(0, 0%, 14%);
   --text-color: hsl(67, 22%, 77%);
+  background-image: url("assets/wwwhirl5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .sideLeft {
@@ -86,13 +95,13 @@ svg {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 1020px) {
-  .App {
+  /* .App {
     background-image: url("assets/wwwhirl5.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-  }
+  } */
 
   .center {
     width: 100vw;
