@@ -42,8 +42,8 @@ function sketchL(p5) {
     var S = p5.map(res, 0, 0.03, 30, 50);
     var L = p5.map(res, 0, 0.03, 10, 40);
     
-    p5.waterBall(w1, h1, radius1, 40, H1, H2, H3, S, L);
-    p5.waterBall(w2, h2, radius2, 20, H1, H2, H3, S, L);
+    p5.waterBall(w1, h1, radius1, 23, H1, H2, H3, S, L);
+    p5.waterBall(w2, h2, radius2, 10, H1, H2, H3, S, L);
 
     if(res <= 0.004 || res >= 0.022){move *=-1};
     res += move;
@@ -160,9 +160,9 @@ function sketchR(p5) {
     var S = p5.map(res, 0, 0.03, 30, 50);
     var L = p5.map(res, 0, 0.03, 10, 40);
     
-    p5.waterBall(ws[0], hs[0], rads[0], 15, H1, H2, H3, S, L);
-    p5.waterBall(ws[1], hs[1], rads[1], 20, H1, H2, H3, S, L);
-    p5.waterBall(ws[2], hs[2], rads[2], 30, H1, H2, H3, S, L);
+    p5.waterBall(ws[0], hs[0], rads[0], 7, H1, H2, H3, S, L);
+    p5.waterBall(ws[1], hs[1], rads[1], 9, H1, H2, H3, S, L);
+    p5.waterBall(ws[2], hs[2], rads[2], 18, H1, H2, H3, S, L);
 
     if(res <= 0.004 || res >= 0.022){move *=-1};
     res += move;

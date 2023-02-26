@@ -1,0 +1,10 @@
+
+.multi__carousel {
+    width: 50%;
+    height: 50%;
+}
+
+.multi__carousel img {
+    width: 8vw;
+    /* height: 50%; */
+}

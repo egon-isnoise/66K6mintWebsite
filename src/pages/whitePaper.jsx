@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, createContext } from 'react';
 import { ReactP5Wrapper} from "react-p5-wrapper";
 import MainHeader from '../homeComponents/header/mainHeader';
+import MultiCarousel from '../homeComponents/mint/carousel';
 import MainFooter from '../homeComponents/footer/mainFooter';
 
 export const ThemeContext = createContext(null);
@@ -262,6 +263,8 @@ function WhitePaper() {
             <div className='mainHeader'>
               <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
             </div>
+            <MultiCarousel/>
+
           
             <MainFooter/>
           </div>
