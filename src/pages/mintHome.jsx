@@ -237,7 +237,7 @@ function sketchR(p5) {
 
 function Home() {
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 1024;
+  const breakpoint = 1020;
 
   React.useEffect(() => {
     const handleResizeWindow = () => setWidth(window.innerWidth);

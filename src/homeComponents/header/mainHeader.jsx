@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
 import {FaInstagramSquare, FaTwitterSquare, FaDiscord} from 'react-icons/fa'
 import { Noise } from '../icons/noise';
-// import { Etherscan } from '../icons/etherscan';
 import toast, { Toaster } from 'react-hot-toast';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Switch from '@mui/material/Switch';
 import './mainHeader.css';
-// import './walletConnect.css';
+
 
 
 const MainHeader = ({ setAccounts, theme, setTheme }) => {

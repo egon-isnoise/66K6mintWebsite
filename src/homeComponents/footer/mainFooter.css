@@ -33,8 +33,7 @@ svg {
     fill: var(--text-color);
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1020px) {
 
     .footer {
         width: 100vw;

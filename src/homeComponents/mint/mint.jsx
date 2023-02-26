@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {FaEthereum, FaLeaf} from 'react-icons/fa';
+import {FaEthereum} from 'react-icons/fa';
 import {IoIosPaper} from 'react-icons/io';
 import { ethers } from 'ethers';
 import toast, { Toaster } from 'react-hot-toast';
@@ -42,7 +42,6 @@ const Mint = ({ accounts }) => {
             }
         }
     }
-
 
     return(
         <section id="mint">
@@ -100,10 +99,7 @@ const Mint = ({ accounts }) => {
                         </div>
                         </>
                     )}
-                    
-
                 </div>
-
             </div>
         </section>
     )
