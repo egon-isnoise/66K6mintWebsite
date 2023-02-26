@@ -22,7 +22,7 @@ const About = () => {
                 <div className="roadmap">
                     <h1>Roadmap & Whitepaper</h1> 
                     <br />
-                         <a href="#home" target="_blank" rel="noreferrer">
+                         <a href="roadMap" target="_blank" rel="noreferrer">
                          <FaMap/>
                         </a>
                         <a href="whitePaper" target="_blank" rel="noreferrer">

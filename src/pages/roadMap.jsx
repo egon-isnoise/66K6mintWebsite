@@ -232,7 +232,7 @@ function sketchR(p5) {
 }
 
 
-function WhitePaper() {
+function RoadMap() {
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 1020;
 
@@ -290,4 +290,4 @@ function WhitePaper() {
   }
 }
 
-export default WhitePaper;
+export default RoadMap;
