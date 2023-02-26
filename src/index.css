@@ -86,7 +86,17 @@ svg {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 1024px) {
+  .App {
+    background-image: url("assets/wwwhirl5.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+
   .center {
     width: 100vw;
+    background-color: hsla(0, 0%, 14%, 55%);
   }
 }
+
