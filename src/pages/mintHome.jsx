@@ -6,6 +6,8 @@ import Mint from '../components/mint/mint';
 import About from '../components/about/about';
 import Team from '../components/team/team';
 import MainFooter from '../components/footer/mainFooter';
+import VideoCarousel from '../components/videos/videoCarousel';
+import RoadWhite from '../components/about/roadmap&whitepaper';
 
 export const ThemeContext = createContext(null);
 
@@ -36,6 +38,8 @@ function Home() {
           <div className="center">
             <Mint accounts={accounts}/>
             <About/>
+            <VideoCarousel/>
+            <RoadWhite/>
             <Team/> 
             <MainFooter/>
           </div>

@@ -6,6 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import GIF from '../../assets/luceTrioRVB40.jpeg';
 import SixSixkSixNFTABI from '../../6Sick6NFT.json';
 import './mint.css';
+import SimpleCarousel from './carousel';
 
 const SixSixkSixNFTaddress = "0xA0253d08AC1736b9445BD4A2e75B876fEcF89aee";
 
@@ -53,9 +54,10 @@ const Mint = ({ accounts }) => {
                 }}
             />
             <div className="container mint__container">
-                <div className="sick_gif">
+                <SimpleCarousel/>
+                {/* <div className="sick_gif">
                     <img src={GIF} alt="6sick6 gif"/>
-                </div>
+                </div> */}
 
                 <div className="full_minting">
                     {isConnected ? (

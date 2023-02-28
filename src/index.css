@@ -26,7 +26,6 @@ body {
   outline: 0;
   display: flex;
   flex-direction: column;
-  background-color: var(--general-background);
   color: var(--text-color);
 }
 

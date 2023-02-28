@@ -27,7 +27,7 @@ const Team = () => {
                 <div className="member_container">
                     <img src={IMAGE2} alt="Xefler"/>
                     <div className="description_socials">
-                        <h1> Design </h1>
+                        <h1> Research </h1>
                         <p>puleo.giorgio</p>
                         <div className="links_socials">
                             <a href="https://www.instagram.com/xefler_/?theme=dark" target="_blank" rel="noreferrer">
