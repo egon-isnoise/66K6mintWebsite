@@ -1,13 +1,14 @@
 .description_container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
-    gap: 7.5vh;
+    gap: 5vh;
     width: 50vw;
-    padding: 10vw;
-    padding-top: 15vh;
-    padding-bottom: 20vh;
+    padding: 5vw;
+    padding-top: 12vh;
+    padding-bottom: 8vh;
+    /* background-color: aquamarine; */
 }
 
 .description_container >* {
@@ -15,9 +16,42 @@
     color: var(--text-color);
 }
 
-.roadmap > a {
-    font-size: 5vh;
-    padding: 2vh;
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Rune', sans-serif;
+    font-size: 2.5vw;
+    width: 40vw;
+    height: 15vh;
+}
+
+.title h1:hover{
+    cursor: pointer;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2.3vw;
+}
+
+.roadmap {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    padding-top: 15vh;
+}
+
+.white_paper {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+.emoji a {
+    font-size: 10vh;
+}
+
+.emoji {
+    height: 14vh;
+    /* background-color: aliceblue; */
 }
 
 /* Smartphones (portrait) ----------- */

@@ -263,7 +263,7 @@ function WhitePaper() {
             <div className='mainHeader'>
               <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
             </div>
-            <MultiCarousel/>
+            {/* <MultiCarousel/> */}
 
           
             <MainFooter/>

@@ -23,10 +23,15 @@ const MainHeader = ({ setAccounts, theme, setTheme }) => {
             accountChangedHandler(accounts[0]);
             setAccounts(accounts);
             console.log(accounts[0]);
-            toast.success(
+            toast(
                 "You succesfully connected Metamask!\n\nYou are ready to mint now",
                 {
+                icon: '👁👁',
                   duration: 4000,
+                  style: {
+                    background: "rgba( 250, 250, 250, 0.55 )",
+                    border: '1px solid rgba( 255, 255, 255, 0.18 )',
+                  },
                 }
             );
         } 
@@ -77,7 +82,7 @@ const MainHeader = ({ setAccounts, theme, setTheme }) => {
                 />
                 <div className="container header__connection">
                     <div className="dark__mode">
-                        <Brightness4Icon sx={{ fontSize: 65 }}/>
+                        <Brightness4Icon sx={{ fontSize: 55 }}/>
                         <Switch color="default" sx={{ fontSize: 50 }}
                             onChange={toggleTheme} 
                             checked={theme === "dark"}

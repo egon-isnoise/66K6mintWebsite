@@ -3,10 +3,10 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    height: 12vh;
+    height: 8vh;
     width: 50vw;
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
     align-items: center;
     margin: auto;
 }
@@ -22,11 +22,11 @@
 }
 
 .footer__socials a {
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .etherscan {
-    width: 5.4vw;
+    width: 4.3vw;
 }
 
 svg {

@@ -1,17 +1,32 @@
 .mint__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 3vh;
+    gap: 10vh;
     width: 50vw;
     margin-right: 1vw;
 }
 
+.pre_mint h1 {
+    font-size: 3vw;
+    font-family: 'Rune', sans-serif;
+}
+
+.pre_mint h1:hover{
+    cursor: pointer;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2vw;
+}
+
+.mint_details{
+    font-size: 1.2vw;
+}
+
 .sick_gif {
-    width: 26vw;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
+    width: 20vw;
+    padding-top: 12vh;
+    padding-bottom: 3vh;
 }
 
 .sick_gif img {
@@ -26,9 +41,10 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 5vh;
+    width: 15vw;
+    margin-top: 10vh;
     padding-bottom: 5vh;
-    font-size: 3vh;
+    font-size: 3.5vh;
 }
 
 .minting_button {
@@ -79,6 +95,8 @@ button:hover {
 @media only screen and (max-width: 1020px) {
     .mint__container {
         width: 100vw;
+        flex-direction: column;
+        
     }
     .sick_gif {
         width: 70vw;

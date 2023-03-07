@@ -1,19 +1,33 @@
 .team__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 40vh;
     width: 50vw;
-    margin-bottom: 5vw;
     gap: 4vh;
 }
 
 .member_container {
     display: flex;
     flex-direction: row;
-    width: 23vw;
-    height: 18vh;
+    justify-content: space-around;
+    width: 17vw;
+    height: 15vh;
+    font-family: 'Rune', sans-serif;
+    font-size: 1.3vw;
+    /* background-color: aquamarine; */
+}
+
+.member_container h1:hover{
+    cursor: pointer;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.3vw;
+}
+
+.member_container p {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1vw;
 }
 
 .member_container img {
@@ -27,7 +41,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5vh;
-    position: relative;
+    /* position: relative; */
     margin: 1vw;
 }
 
@@ -35,7 +49,7 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    gap: 0.8rem;
+    gap: 0.2vw;
     position: relative;
 }
 
@@ -49,6 +63,7 @@
         width: 100vw;
         padding-bottom: 10vh;
         padding-left: 25%;
+        flex-direction: column;
     }
 
     .member_container {
@@ -72,6 +87,7 @@
     .member_container {
         width: 40vw;
         margin-left: -50vw;
+        flex-direction: column;
     }
 
     .description_socials {
@@ -88,6 +104,7 @@
     .team__container {
         height: 55vh;
         padding-bottom: 20vh;
+        flex-direction: column;
     }
 
     .member_container {

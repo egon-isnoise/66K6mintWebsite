@@ -40,7 +40,7 @@ function sketchL(p5) {
     var H2 = p5.map(res, 0, 0.03, 130, 190);
     var H3 = p5.map(res, 0, 0.03, 230, 235);
     var S = p5.map(res, 0, 0.03, 30, 50);
-    var L = p5.map(res, 0, 0.03, 10, 40);
+    var L = p5.map(res, 0, 0.03, 0, 40);
     
     p5.waterBall(w1, h1, radius1, 23, H1, H2, H3, S, L);
     p5.waterBall(w2, h2, radius2, 10, H1, H2, H3, S, L);
@@ -158,7 +158,7 @@ function sketchR(p5) {
     var H2 = p5.map(res, 0, 0.03, 130, 190);
     var H3 = p5.map(res, 0, 0.03, 230, 235);
     var S = p5.map(res, 0, 0.03, 30, 50);
-    var L = p5.map(res, 0, 0.03, 10, 40);
+    var L = p5.map(res, 0, 0.03, 0, 40);
     
     p5.waterBall(ws[0], hs[0], rads[0], 7, H1, H2, H3, S, L);
     p5.waterBall(ws[1], hs[1], rads[1], 9, H1, H2, H3, S, L);
@@ -265,9 +265,9 @@ function Home() {
             <div className='mainHeader'>
               <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
             </div>
-            <Mint accounts={accounts}/>
+            <Mint accounts={accounts}/> 
             <About/>
-            <Team/> 
+            <Team/>
             <MainFooter/>
           </div>
           <div className="sideRight">

@@ -1,36 +1,54 @@
 import React from "react";
-import {FaMap} from 'react-icons/fa'
-import {IoIosPaper} from 'react-icons/io';
+// import GIF from '../../assets/why.gif';
+// import GIF2 from '../../assets/roadmap.gif';
+// import GIF3 from '../../assets/justdoit.gif';
 import './about.css';
 
 const About = () => {
     return(
         <section id="about">
             <div className="description_container">
-                <div className="why">
-                    <h1>Why 66K6?</h1>
+                    <div className="title">
+                        <h2>🪬</h2>
+                        <h1> WE ARE THE DAEMONS </h1>
+                        
+                    </div>
                     <br />
-                    <p>We are born to show the futility of demonizing each other,
-                        be it for reason of ideologies, beliefs, race, sexuality or other 
-                        superficial differences.
-                    </p>
                     <br />
-                    <p>Deep down we all are the same,
-                        hiding behind a thick, fuzzy, skin.
+                    <p>
+                        In Plato's Symposium, the priestess Diotima teaches Socrates that love is not a deity, but rather a "great daemon". 
                     </p>
-                </div>
+                    <p>
+                        She goes on to explain that "everything daemonic is between divine and mortal", and she describes daemons as "interpreting and transporting human things to the gods and divine things to men..."
+                    </p>
+                    <p>
+                        No wonder today to be demonized means to be hunted down, shun for having shown a free personality, for thinking too differently, for having raised one's head in the face of the established order. 
+                    </p>
+                    <p>
+                    This project serves to give a voice, to give space and community to all those who always felt a bit daemonic, those excluded just because they are different (for appearance, skin colour, personality, sexual orientation, neurodivergency), 
+the misunderstood bringing new prespectives and messages.
+                    </p>
                 <div className="roadmap">
-                    <h1>Roadmap & Whitepaper</h1> 
-                    <br />
-                         <a href="roadMap" target="_blank" rel="noreferrer">
-                         <FaMap/>
+                    <div className="emoji">
+                        <a href="roadMap" target="_blank" rel="noreferrer">
+                            <p>🧭</p>
                         </a>
+                    </div> 
+                    <div className="road_directions">
+                    <h1>Roadmap</h1>
+                    <p> Every NFT doubles as a vote in the SickDao. You choose collectively which projects to support from the treasury. </p>
+                    </div>
+                </div>
+                <div className="white_paper">
+                <div className="emoji">
                         <a href="whitePaper" target="_blank" rel="noreferrer">
-                         <IoIosPaper/>
+                            <p>📓</p>
                         </a>
-                    <p>Every NFT doubles as a vote in the SickDao.</p>
-                    <p>You choose collectively which projects to support from the treasury.
-                    </p>
+                    </div>
+                    <div className="road_directions">
+                    <h1>Whitepaper</h1>
+                    <p> Every NFT doubles as a vote in the SickDao. You choose collectively which projects to support from the treasury. </p>
+                    </div>
                 </div>
 
             </div>

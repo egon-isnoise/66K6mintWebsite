@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import {FaEthereum} from 'react-icons/fa';
-import {IoIosPaper} from 'react-icons/io';
+import 'animate.css';
 import { ethers } from 'ethers';
 import toast, { Toaster } from 'react-hot-toast';
-import GIF from '../../assets/11th.gif';
+import GIF from '../../assets/13th.gif';
 import SixSixkSixNFTABI from '../../6Sick6NFT.json';
 import './mint.css';
 
@@ -33,7 +32,13 @@ const Mint = ({ accounts }) => {
                 signer
             );
             try {
-                toast.success('Your NFT is on its way...\n\nWAIT for MetaMask to pop up!');
+            toast.success('Your NFT is on its way...\n\nWAIT for MetaMask to pop up!', {
+                icon: '🎉🔥',
+                style: {
+                    background: "rgba( 255, 255, 255, 0.4 )",
+                    border: '1px solid rgba( 255, 255, 255, 0.18 )',
+                  },
+            });
                 const response = await contract.mint(accounts[0], mintAmount);
                 console.log('response: ', response);
 
@@ -63,7 +68,7 @@ const Mint = ({ accounts }) => {
                         <div className="more_less">
                             <div className="more_icon">
                             <a href="#home" target="_blank" rel="noreferrer">
-                                <IoIosPaper/>
+                                <h2>🪷</h2>
                             </a>
                             </div>
                             <button className='increments'
@@ -74,18 +79,18 @@ const Mint = ({ accounts }) => {
                                 onClick={handleIncrement}
                             >+</button>
                             <div className="more_icon">
-                            <a href="#home" target="_blank" rel="noreferrer">
-                                <FaEthereum/>
-                            </a>
+                                <a href="#home" target="_blank" rel="noreferrer">
+                                <h1>📓</h1>
+                                </a>
                             </div>
                         </div>
-                            <div>
+                            <div className='mint_details'>
                                 <button
                                     className="minting_button"
                                     onClick={handleMint}
-                                >Mint</button>
-
-                                <br />
+                                >
+                                    Mint
+                                </button>
                                 <br />
                                 <p>0.1 ETH x NFT</p>
                                 <p>max 10 mints x wallet</p>
@@ -96,6 +101,7 @@ const Mint = ({ accounts }) => {
                         <>
                         <div className="pre_mint">
                             <h1>Connect MetaMask to Mint</h1>
+                            <h2>💎</h2>
                         </div>
                         </>
                     )}
