@@ -92,6 +92,7 @@ const Mint = ({ accounts }) => {
                                     Mint
                                 </button>
                                 <br />
+                                <br />
                                 <p>0.1 ETH x NFT</p>
                                 <p>max 10 mints x wallet</p>
                             </div>

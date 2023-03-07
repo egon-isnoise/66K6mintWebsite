@@ -51,8 +51,8 @@
     width: 11vw;
     font-family: 'Merriweather', sans-serif;
     font-weight: 900;
-    font-size: 2vh;
-    padding: 1vw;
+    font-size: 1.3rem;
+    padding: 0.6vw;
     border: 3px solid var(--text-color);
     color: var(--text-color);
     background-color: transparent;

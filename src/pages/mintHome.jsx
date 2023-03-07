@@ -138,7 +138,7 @@ function sketchR(p5) {
     ]
 
     ws = [
-      w/3.7,
+      w/4.5,
       w/2.5,
       w/1.3,
     ]

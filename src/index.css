@@ -37,9 +37,9 @@ html {
 }
 
 #light {
-  --general-background: hsl(180, 22%, 93%);
+  --general-background: hsl(48, 10%, 80%);
   --text-color: hsl(0, 0%, 14%);
-  background-image: url("assets/ccchaos4.svg");
+  background-image: url("assets/ccchaos5.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

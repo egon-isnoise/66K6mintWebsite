@@ -39,10 +39,32 @@
     padding-top: 15vh;
 }
 
+.roadmap h1{
+    font-family: 'Rune', sans-serif;
+    font-size: 3vw;
+}
+
+.roadmap h1:hover{
+    cursor: pointer;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2vw;
+}
+
 .white_paper {
     display: flex;
     flex-direction: row;
     gap: 4vw;
+}
+
+.white_paper h1{
+    font-family: 'Rune', sans-serif;
+    font-size: 3vw;
+}
+
+.white_paper h1:hover{
+    cursor: pointer;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2vw;
 }
 
 .emoji a {
