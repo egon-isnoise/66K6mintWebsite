@@ -68,8 +68,12 @@
 
     .member_container {
         width: 60vw;
-        height: 18vh;
+        height: 16vh;
         margin-right: 22vw;
+        font-size: 5vw;
+    }
+    .member_container p {
+        font-size: 2.5vw;
     }
 
     .description_socials {
@@ -85,13 +89,13 @@
 @media only screen and (max-width: 500px) {
 
     .member_container {
-        width: 40vw;
-        margin-left: -50vw;
-        flex-direction: column;
+        width: 70vw;
+        /* margin-left: -50vw; */
+        flex-direction: row;
     }
-
     .description_socials {
         margin-left: 5vw;
+        font-size: 7vw;
     }
 
     .links_socials a {

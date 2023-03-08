@@ -38,11 +38,11 @@ svg {
     .footer {
         width: 100vw;
         padding-top: 5vh;
-        padding-bottom: 10vh;
+        padding-bottom: 5vh;
     }
 
     .footer__socials a {
-        font-size: 15vw;
+        font-size: 9vw;
     }
 
     .etherscan {

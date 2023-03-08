@@ -75,7 +75,7 @@ button:hover {
     }
 
     .header__socials a {
-        font-size: 15vw;
+        font-size: 9vw;
     }
 
     .egonisnoise {
@@ -86,12 +86,12 @@ button:hover {
         display: none;
     }
 
-    .header__connection {
+    /* .header__connection {
         padding-left: 2vw;
-    }
+    } */
 
     .header__connection button {
-        font-size: 5vw;
+        font-size: 4vw;
         padding: 1.2vw;
     }
   }

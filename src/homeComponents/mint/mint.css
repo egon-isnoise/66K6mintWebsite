@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 10vh;
     width: 50vw;
-    margin-right: 1vw;
+    /* margin-right: 1vw; */
 }
 
 .pre_mint h1 {
@@ -42,7 +42,7 @@
     text-align: center;
     justify-content: center;
     width: 15vw;
-    margin-top: 10vh;
+    margin-top: 18vh;
     padding-bottom: 5vh;
     font-size: 3.5vh;
 }
@@ -96,12 +96,27 @@ button:hover {
     .mint__container {
         width: 100vw;
         flex-direction: column;
-        
+        gap: 0vh;
     }
     .sick_gif {
         width: 70vw;
-        padding-top: 7vh;
-        padding-bottom: 2vh;
+        padding-top: 5vh;
+        padding-bottom: 0vh;
+        /* background-color: azure; */
+    }
+
+    .pre_mint h1 {
+        font-size: 8vw;
+        font-family: 'Merriweather', sans-serif;
+    }
+
+    .pre_mint h1:hover{
+        font-size: 8vw;
+    }
+
+    .full_minting {
+        margin-top: 5vh;
+        padding-bottom: 4vh;
     }
 
     .more_less a {
@@ -115,8 +130,12 @@ button:hover {
     }
 
     .minting_button {
-        width: 25vw;
+        width: 40vw;
         font-size: 4vh;
+    }
+
+    .mint_details{
+        font-size: 3.5vw;
     }
   }
 
