@@ -77,15 +77,16 @@ const MainHeader = ({ setAccounts, theme, setTheme }) => {
                 </div>
 
                 <Toaster
-                    position="top-center"
+                    position="top-left"
                     reverseOrder={false}
                 />
                 <div className="container header__connection">
                     <div className="dark__mode">
-                        <Brightness4Icon sx={{ fontSize: 55 }}/>
-                        <Switch color="default" sx={{ fontSize: 50 }}
+                        <Brightness4Icon sx={{ fontSize: 50 }}/>
+                        <Switch color="default" 
                             onChange={toggleTheme} 
                             checked={theme === "dark"}
+                            size = "small"
                         />
                     </div>
 

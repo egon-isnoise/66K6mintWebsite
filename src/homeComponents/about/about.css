@@ -20,16 +20,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Rune', sans-serif;
-    font-size: 2.5vw;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2vw;
     width: 40vw;
-    height: 15vh;
+    height: 10vh;
 }
 
 .title h1:hover{
     cursor: pointer;
-    font-family: 'Merriweather', sans-serif;
-    font-size: 2.3vw;
+    font-family: 'Rune', sans-serif;
+    font-size: 4.5vw;
 }
 
 .roadmap {

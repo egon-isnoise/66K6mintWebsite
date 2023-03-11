@@ -24,9 +24,9 @@
 }
 
 .sick_gif {
-    width: 20vw;
-    padding-top: 12vh;
-    padding-bottom: 3vh;
+    width: 23vw;
+    padding-top: 10vh;
+
 }
 
 .sick_gif img {
@@ -105,9 +105,13 @@ button:hover {
         /* background-color: azure; */
     }
 
+    .pre_mint {
+        width: 80vw;
+    }
+
     .pre_mint h1 {
-        font-size: 8vw;
-        font-family: 'Merriweather', sans-serif;
+        font-size: 12vw;
+        /* font-family: 'Merriweather', sans-serif; */
     }
 
     .pre_mint h1:hover{
@@ -139,10 +143,10 @@ button:hover {
     }
   }
 
-  @media only screen and (max-width: 300px) {
+  /* @media only screen and (max-width: 300px) {
     .full_minting {
         padding-left: 5vw;
         padding-right: 5vw;
     }
 
-}
+} */

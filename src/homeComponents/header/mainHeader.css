@@ -5,7 +5,7 @@
     flex-direction: row;
     height: 8vh;
     width: 50vw;
-    padding-top: 3vh;
+    padding-top: 8vh;
     align-items: center;
     margin: auto;
 }
@@ -49,7 +49,7 @@
 
 .header__connection button {
     font-family: 'Merriweather', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2vw;
     padding: 0.6vw;
     border: 3px solid var(--text-color);
     color: var(--text-color);
@@ -91,7 +91,7 @@ button:hover {
     } */
 
     .header__connection button {
-        font-size: 4vw;
+        font-size: 3vw;
         padding: 1.2vw;
     }
   }
