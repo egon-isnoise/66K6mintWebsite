@@ -112,6 +112,12 @@ function sketchL(p5) {
 
   p5.windowResized = function() {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+    w = p5.windowWidth * 0.25;
+    h = p5.windowHeight;
+    w1 = w *0.1;
+    h1 = h * 0.8;
+    w2 = w *0.7;
+    h2 = h * 0.2;
   };
 }
 
@@ -231,6 +237,8 @@ function sketchR(p5) {
 
   p5.windowResized = function() {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+    w = p5.windowWidth * 0.25;
+    h = p5.windowHeight;
   };
 }
 
@@ -257,9 +265,7 @@ function Home() {
       <ThemeContext.Provider value ={{theme, setTheme}}>
         <div className="App" id={theme}>
           <div className="sideLeft">
-            <div className="p5Left">
                 <ReactP5Wrapper sketch={sketchL}/>
-            </div>
           </div>
           <div className="center">
             <div className='mainHeader'>
@@ -271,9 +277,7 @@ function Home() {
             <MainFooter/>
           </div>
           <div className="sideRight">
-            <div className="p5Right">
                 <ReactP5Wrapper sketch={sketchR}/>
-            </div>
           </div>
       </div>
       </ThemeContext.Provider>
