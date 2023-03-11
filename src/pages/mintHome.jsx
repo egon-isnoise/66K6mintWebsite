@@ -23,13 +23,12 @@ function sketchL(p5) {
   p5.setup = () => {
     p5.createCanvas(w, h);
     p5.colorMode(p5.HSL);
-    radius1 = w * 0.85;
-    radius2 = w * 0.25;
-
     w1 = w *0.1;
     h1 = h * 0.8;
     w2 = w *0.7;
     h2 = h * 0.2;
+    radius1 = w * 0.85;
+    radius2 = w * 0.25;
   }
 
   p5.draw = () => {
@@ -118,6 +117,8 @@ function sketchL(p5) {
     h1 = h * 0.8;
     w2 = w *0.7;
     h2 = h * 0.2;
+    radius1 = w * 0.85;
+    radius2 = w * 0.25;
   };
 }
 
@@ -239,6 +240,23 @@ function sketchR(p5) {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
     w = p5.windowWidth * 0.25;
     h = p5.windowHeight;
+    rads = [
+      w * 0.2,
+      w * 0.25,
+      w * 0.45,
+    ]
+
+    ws = [
+      w/4.5,
+      w/2.5,
+      w/1.3,
+    ]
+
+    hs = [
+      h/1.7,
+      h/1.2,
+      h/4,
+    ]
   };
 }
 
