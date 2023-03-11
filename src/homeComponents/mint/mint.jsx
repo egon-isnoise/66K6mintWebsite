@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import 'animate.css';
 import { ethers } from 'ethers';
 import toast, { Toaster } from 'react-hot-toast';
-import GIF from '../../assets/yeah.gif';
+import GIF from '../../assets/14th.gif';
 import SixSixkSixNFTABI from '../../6Sick6NFT.json';
 import './mint.css';
 
