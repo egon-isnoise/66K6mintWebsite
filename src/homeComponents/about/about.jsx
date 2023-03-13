@@ -1,7 +1,4 @@
 import React from "react";
-// import GIF from '../../assets/why.gif';
-// import GIF2 from '../../assets/roadmap.gif';
-// import GIF3 from '../../assets/justdoit.gif';
 import './about.css';
 
 const About = () => {
@@ -11,7 +8,6 @@ const About = () => {
                     <div className="title">
                         <h2>🪬</h2>
                         <h1> WE ARE THE DAEMONS </h1>
-                        
                     </div>
                     <br />
                     <br />
@@ -36,7 +32,7 @@ the misunderstood bringing new prespectives and messages.
                     </div> 
                     <div className="road_directions">
                     <h1>Roadmap</h1>
-                    <p> Every NFT doubles as a vote in the SickDao. You choose collectively which projects to support from the treasury. </p>
+                    <p> A DAO, your votes, 50% of sales devolved to social and humanitarian projects, the possibility to win 3% of the whole deal. </p>
                     </div>
                 </div>
                 <div className="white_paper">
@@ -47,7 +43,8 @@ the misunderstood bringing new prespectives and messages.
                     </div>
                     <div className="road_directions">
                     <h1>Whitepaper</h1>
-                    <p> Every NFT doubles as a vote in the SickDao. You choose collectively which projects to support from the treasury. </p>
+                    <p> We believe NFTs are here to stay and it's time to have more than communities made only of investors and twitter influencers.</p>
+                    <p>We are humans, we are Daemons, and we want to use this technology to lift people up.</p>
                     </div>
                 </div>
 

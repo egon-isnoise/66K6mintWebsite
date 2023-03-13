@@ -2,8 +2,8 @@ import React from 'react';
 import { useState, createContext } from 'react';
 import { ReactP5Wrapper} from "react-p5-wrapper";
 import MainHeader from '../homeComponents/header/mainHeader';
-import MultiCarousel from '../homeComponents/mint/carousel';
 import MainFooter from '../homeComponents/footer/mainFooter';
+import '../homeComponents/about/about.css';
 
 export const ThemeContext = createContext(null);
 
@@ -263,9 +263,28 @@ function WhitePaper() {
             <div className='mainHeader'>
               <MainHeader setAccounts={setAccounts} theme={theme} setTheme={setTheme}/>
             </div>
-            {/* <MultiCarousel/> */}
-
-          
+            <div className="description_container">
+              <div className="title">
+                          <h3>🪬</h3>
+                          <h1> THE DAEMONS </h1>
+                      </div>
+                <p>are 6.666 Exclusive
+                digital devils NFTs living on the Ethereum
+                Blockchain, linked directly to real world missions for
+                social good.</p>
+                
+                <br />
+                <br />
+                <p>
+                The term Religion is linked to the meaning of binding or bringing together. The concept itself is not wrong because it is right to respect the inclusive nature of reality without judgment or rejection, but the various churches we see in the world are becoming increasingly closed, restricted, dogmatic and therefore elitist. It is no coincidence, they have no value for those suffering from psychosis and neurosis, for those who are genderfluid, for those who are discriminated against by ethnicity or simply by the color of their skin. On the contrary, religious affiliation has paradoxically become, in some cases, discrimination. This is why being devils, being demons, as this project intends it, intends precisely to address all sorts of discriminated against, to those who really need a community that supports them. And this without needing a dogma or a sacred text or a morality dictated from above but only through healthy common sense. So demons, devils, excluded from the world, we don't want you to be or feel alone, look how precious your diversity is. By purchasing the NFTs you will be supporters of realities, of associations, which will concretely help above all those who are discriminated against, for cultural or social issues.
+                When the project is well underway, we will also think about targeted individual help for those who have to face challenges of this type in a personal way in the jungles of our modern societies, involving health professionals, such as psychologists and therapists.
+                A concrete help not only for groups of people but also for you or your friends who may need psychological support in their activity of acceptance and harmonization of their diversity. Like angels but without an elitist spirit, secretly from hell, just like devils, we will push and support all those like us who need it.
+                Being the devil will be your badge as an angel in disguise, as a bearer of light, with the awareness that if you want to emerge you have to get your hands dirty and face what you fear. The holders of this badge, the members of this community, will know what lies behind this provocative aspect of their avatar, immediately realizing they are not alone and therefore giving strength to their actions of revolution and freedom!
+                </p>
+                <br />
+                <br />
+                <p>You can find our social links at the top and bottom of the page. Come be part of our community on our Discord!</p>
+            </div>
             <MainFooter/>
           </div>
           <div className="sideRight">
