@@ -1,9 +1,14 @@
+#team {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
 .team__container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 30vh;
     width: 50vw;
     gap: 4vh;
 }

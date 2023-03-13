@@ -21,7 +21,7 @@ const About = () => {
                         No wonder today to be demonized means to be hunted down, shun for having shown a free personality, for thinking too differently, for having raised one's head in the face of the established order. 
                     </p>
                     <p>
-                    This project serves to give a voice, to give space and community to all those who always felt a bit daemonic, those excluded just because they are different (for appearance, skin colour, personality, sexual orientation, neurodivergency), 
+                    This project serves to give a voice, to give space and community to all those who always felt a bit daemonic, those on the fringes just because they are different (for personality, interests, neurodivergency, appearance, skin colour, sexual orientation), 
 the misunderstood bringing new prespectives and messages.
                     </p>
                 <div className="roadmap">
@@ -32,6 +32,7 @@ the misunderstood bringing new prespectives and messages.
                     </div> 
                     <div className="road_directions">
                     <h1>Roadmap</h1>
+                    <br />
                     <p> A DAO, your votes, 50% of sales devolved to social and humanitarian projects, the possibility to win 3% of the whole deal. </p>
                     </div>
                 </div>
@@ -43,8 +44,9 @@ the misunderstood bringing new prespectives and messages.
                     </div>
                     <div className="road_directions">
                     <h1>Whitepaper</h1>
-                    <p> We believe NFTs are here to stay and it's time to have more than communities made only of investors and twitter influencers.</p>
-                    <p>We are humans, we are Daemons, and we want to use this technology to lift people up.</p>
+                    <br />
+                    <p> We believe NFTs and the crypto world are here to stay and it's time to show what communities can do with decentralization, DAOs, smart contracts, and a common aim.</p>
+                    <p>We are just humans, but like Daemons, we can use new perspectives and technologies to lift people up.</p>
                     </div>
                 </div>
 

@@ -3,6 +3,7 @@ import { useState, createContext } from 'react';
 import { ReactP5Wrapper} from "react-p5-wrapper";
 import MainHeader from '../homeComponents/header/mainHeader';
 import MainFooter from '../homeComponents/footer/mainFooter';
+import Team from '../homeComponents/team/team';
 import '../homeComponents/about/about.css';
 
 export const ThemeContext = createContext(null);
@@ -21,13 +22,12 @@ function sketchL(p5) {
   p5.setup = () => {
     p5.createCanvas(w, h);
     p5.colorMode(p5.HSL);
-    radius1 = w * 0.85;
-    radius2 = w * 0.25;
-
     w1 = w *0.1;
     h1 = h * 0.8;
     w2 = w *0.7;
     h2 = h * 0.2;
+    radius1 = w * 0.85;
+    radius2 = w * 0.25;
   }
 
   p5.draw = () => {
@@ -38,10 +38,10 @@ function sketchL(p5) {
     var H2 = p5.map(res, 0, 0.03, 130, 190);
     var H3 = p5.map(res, 0, 0.03, 230, 235);
     var S = p5.map(res, 0, 0.03, 30, 50);
-    var L = p5.map(res, 0, 0.03, 10, 40);
+    var L = p5.map(res, 0, 0.03, 0, 40);
     
-    p5.waterBall(w1, h1, radius1, 40, H1, H2, H3, S, L);
-    p5.waterBall(w2, h2, radius2, 20, H1, H2, H3, S, L);
+    p5.waterBall(w1, h1, radius1, 23, H1, H2, H3, S, L);
+    p5.waterBall(w2, h2, radius2, 10, H1, H2, H3, S, L);
 
     if(res <= 0.004 || res >= 0.022){move *=-1};
     res += move;
@@ -110,6 +110,14 @@ function sketchL(p5) {
 
   p5.windowResized = function() {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+    w = p5.windowWidth * 0.25;
+    h = p5.windowHeight;
+    w1 = w *0.1;
+    h1 = h * 0.8;
+    w2 = w *0.7;
+    h2 = h * 0.2;
+    radius1 = w * 0.85;
+    radius2 = w * 0.25;
   };
 }
 
@@ -136,7 +144,7 @@ function sketchR(p5) {
     ]
 
     ws = [
-      w/3.7,
+      w/4.5,
       w/2.5,
       w/1.3,
     ]
@@ -156,11 +164,11 @@ function sketchR(p5) {
     var H2 = p5.map(res, 0, 0.03, 130, 190);
     var H3 = p5.map(res, 0, 0.03, 230, 235);
     var S = p5.map(res, 0, 0.03, 30, 50);
-    var L = p5.map(res, 0, 0.03, 10, 40);
+    var L = p5.map(res, 0, 0.03, 0, 40);
     
-    p5.waterBall(ws[0], hs[0], rads[0], 15, H1, H2, H3, S, L);
-    p5.waterBall(ws[1], hs[1], rads[1], 20, H1, H2, H3, S, L);
-    p5.waterBall(ws[2], hs[2], rads[2], 30, H1, H2, H3, S, L);
+    p5.waterBall(ws[0], hs[0], rads[0], 7, H1, H2, H3, S, L);
+    p5.waterBall(ws[1], hs[1], rads[1], 9, H1, H2, H3, S, L);
+    p5.waterBall(ws[2], hs[2], rads[2], 18, H1, H2, H3, S, L);
 
     if(res <= 0.004 || res >= 0.022){move *=-1};
     res += move;
@@ -229,6 +237,25 @@ function sketchR(p5) {
 
   p5.windowResized = function() {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+    w = p5.windowWidth * 0.25;
+    h = p5.windowHeight;
+    rads = [
+      w * 0.2,
+      w * 0.25,
+      w * 0.45,
+    ]
+
+    ws = [
+      w/4.5,
+      w/2.5,
+      w/1.3,
+    ]
+
+    hs = [
+      h/1.7,
+      h/1.2,
+      h/4,
+    ]
   };
 }
 
@@ -266,14 +293,12 @@ function WhitePaper() {
             <div className="description_container">
               <div className="title">
                           <h3>🪬</h3>
-                          <h1> THE DAEMONS </h1>
+                          <h1> The Daemons</h1>
                       </div>
                 <p>are 6.666 Exclusive
                 digital devils NFTs living on the Ethereum
                 Blockchain, linked directly to real world missions for
                 social good.</p>
-                
-                <br />
                 <br />
                 <p>
                 The term Religion is linked to the meaning of binding or bringing together. The concept itself is not wrong because it is right to respect the inclusive nature of reality without judgment or rejection, but the various churches we see in the world are becoming increasingly closed, restricted, dogmatic and therefore elitist. It is no coincidence, they have no value for those suffering from psychosis and neurosis, for those who are genderfluid, for those who are discriminated against by ethnicity or simply by the color of their skin. On the contrary, religious affiliation has paradoxically become, in some cases, discrimination. This is why being devils, being demons, as this project intends it, intends precisely to address all sorts of discriminated against, to those who really need a community that supports them. And this without needing a dogma or a sacred text or a morality dictated from above but only through healthy common sense. So demons, devils, excluded from the world, we don't want you to be or feel alone, look how precious your diversity is. By purchasing the NFTs you will be supporters of realities, of associations, which will concretely help above all those who are discriminated against, for cultural or social issues.
@@ -283,8 +308,14 @@ function WhitePaper() {
                 </p>
                 <br />
                 <br />
-                <p>You can find our social links at the top and bottom of the page. Come be part of our community on our Discord!</p>
+                <p>You can find our social links at the top and bottom of the page. Come be part of the community in our Discord server!</p>
+                <br />
+                <br />
+                <div className="title">
+                          <h1> The Team </h1>
+                      </div>
             </div>
+            <Team/>
             <MainFooter/>
           </div>
           <div className="sideRight">

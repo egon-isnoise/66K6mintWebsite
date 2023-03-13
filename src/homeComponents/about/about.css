@@ -67,14 +67,15 @@
     font-size: 2vw;
 }
 
+.emoji {
+    padding-top: 3vh;
+    height: 14vh;
+}
+
 .emoji a {
     font-size: 10vh;
 }
 
-.emoji {
-    height: 14vh;
-    /* background-color: aliceblue; */
-}
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 1020px) {
