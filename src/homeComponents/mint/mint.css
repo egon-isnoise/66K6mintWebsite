@@ -97,6 +97,7 @@ button:hover {
         width: 100vw;
         flex-direction: column;
         gap: 0vh;
+        margin-top: 5vh;
     }
     .sick_gif {
         width: 70vw;
