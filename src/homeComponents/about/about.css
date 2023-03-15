@@ -104,6 +104,19 @@
     .roadmap > a {
         font-size: 5vh;
     }
+
+    .roadmap h1{
+        font-size: 8vw;
+    }
+
+    .white_paper h1{
+        font-size: 8vw;
+    }
+
+    .road_directions {
+        font-size: 3vw;
+        padding-top: 5vh;
+    }
   }
 
   @media only screen and (max-width: 500px) {
@@ -114,7 +127,7 @@
     }
 
     .description_container >* {
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
 
@@ -125,17 +138,27 @@
 
     .roadmap {
         flex-direction: column;
+        font-size: 3vw;
     }
 
     .roadmap h1{
+        font-size: 14vw;
+    }
+
+    .roadmap h1:hover{
         font-size: 10vw;
     }
 
     .white_paper {
         flex-direction: column;
+        font-size: 3vw;
     }
 
     .white_paper h1{
+        font-size: 14vw;
+    }
+
+    .white_paper h1:hover{
         font-size: 10vw;
     }
 
