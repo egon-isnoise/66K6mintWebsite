@@ -1,9 +1,21 @@
 import React from "react";
+import toast, { Toaster } from 'react-hot-toast';
 import './about.css';
+
+const notify = () => toast('Here is your toast.');
 
 const About = () => {
     return(
         <section id="about">
+
+            {/* <Toaster
+                position="top-left"
+                reverseOrder={false}
+                toastOptions={{
+                    duration:6000
+                }}
+            /> */}
+
             <div className="description_container">
                     <div className="title">
                         <h2>🪬</h2>
@@ -26,7 +38,8 @@ the misunderstood bringing new prespectives and messages.
                     </p>
                 <div className="roadmap">
                     <div className="emoji">
-                        <a href="roadMap" target="_blank" rel="noreferrer">
+                        <a >  
+                            {/* href="roadMap" target="_blank" rel="noreferrer" */}
                             <p>🧭</p>
                         </a>
                     </div> 
@@ -38,7 +51,7 @@ the misunderstood bringing new prespectives and messages.
                 </div>
                 <div className="white_paper">
                 <div className="emoji">
-                        <a href="whitePaper" target="_blank" rel="noreferrer">
+                        <a >
                             <p>📓</p>
                         </a>
                     </div>

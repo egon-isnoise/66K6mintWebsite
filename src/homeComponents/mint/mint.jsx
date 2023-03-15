@@ -85,7 +85,7 @@ const Mint = ({ accounts }) => {
                             </div>
                         </div>
                             <div className='mint_details'>
-                                <button
+                                {/* <button
                                     className="minting_button"
                                     onClick={handleMint}
                                 >
@@ -94,7 +94,8 @@ const Mint = ({ accounts }) => {
                                 <br />
                                 <br />
                                 <p>0.1 ETH x NFT</p>
-                                <p>max 10 mints x wallet</p>
+                                <p>max 10 mints x wallet</p> */}
+                                <h1>Minting available soon!</h1>
                             </div>
                         
                         </>  
