@@ -82,24 +82,19 @@
 
     .description_container {
         width: 100vw;
-        padding-top: 5vh;
+        padding-top: 10vh;
+        padding: 10vw;
         gap: 2vh;
     }
 
     .title {
-        /* font-family: 'Merryweather', sans-serif; */
-        font-size: 8vw;
-        width: 90vw;
-        /* background-color: beige; */
+        font-size: 5vw;
+        width: 80vw;
+        height: 20vh;
     }
 
-    .title h1 :hover{
-        font-size: 10;
-    }
-
-    .why {
-        font-size: 4vw;    background-color: aquamarine;
-        /* margin-left: 10vw; */
+    .title h1:hover{
+        font-size: 11vw;
     }
 
     .roadmap {

@@ -66,7 +66,8 @@ button:hover {
 
     .header {
         width: 100vw;
-        padding: 1vh;
+        padding: 3vh;
+        padding-top: 7vh;
     }
 
     .header__socials {
